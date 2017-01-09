@@ -263,7 +263,7 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
     background-repeat: no-repeat;
     background-size: 0 5px, 0 100%, 0% 5px;
     background-position: top center, top center, bottom center;
-   -webkit-animation: drawBorderFromCenter 5s;
+   -webkit-animation: drawBorderFromCenter 8s;
 }
 
 /* Chrome, Safari, Opera */
