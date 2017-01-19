@@ -95,10 +95,10 @@ url(../images/image-graphics.png);width:100%;height:70vh;background-attachment:f
 /*Project*/
 .peer-intro{background-color:#3989c9;}
 .capture-intro{background-color:#17be8c;}
-.graphics-intro{background-color:#ffd107;}
+.graphics-intro{background-color:#ffd107; text-transform:none;}
 .proj-text{display:table-cell;vertical-align:middle;text-align:left;}
 .page-wrapper .proj-text h2{margin-top:30px;}
-.proj-text a:hover, .proj-text a:link, .proj-text a:visited{text-decoration:none;font-weight:700;color:#231f20;}
+.proj-text a:hover, .proj-text a:link, .proj-text a:visited{text-decoration:none;text-transform:none;font-weight:700;color:#231f20;}
 .proj-text em{margin-bottom:1em;}
 .proj-text em:hover{color:#231f20;border-color:#fff;background-color:#fff;}
 .proj-intro .proj-text{text-align:center;}
