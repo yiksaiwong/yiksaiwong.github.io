@@ -28,7 +28,8 @@ ul{margin:0;}
 .header-container{max-width: calc(100% - 10em);margin:auto; z-index:1;}
 .header-container a{display:inline-block;text-align:center;vertical-align: middle;}
 #logo{width:40px;height:auto;}
-.main-nav, .main-nav a:visited, .main-nav a:focus{float:right; margin-top:0.2em;color:#231f20;}
+.main-nav, .main-nav a:visited{float:right; margin-top:0.2em;color:#231f20;}
+.main-nav a:focus{color:#231f20;}
 .main-nav2{position:absolute;display:inline-block;right:3em;top:2.5em;cursor: pointer;}
 .main-nav2:hover, .main-nav2:link, .main-nav2:visited{text-decoration:none;color:#ffe700;}
 .sidenav {height:100%;width:0;position:fixed;z-index:1;top:0;left:0;background-color:#231f20;overflow-x:hidden;transition:0.5s;padding-top:5em;text-align:center;}
