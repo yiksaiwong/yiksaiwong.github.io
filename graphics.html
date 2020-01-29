@@ -8,7 +8,7 @@
 	<meta name="keywords" content="Yiksai Wong, UI/UX Designer, Graphic Designer, Designer, Portfolio">
 	<meta name="author" content="Yiksai Wong">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="icon" href="images/logo-gray.png">
+	<link rel="icon" href="images/logo-black.png">
 
 	<!-- Bootstrap -->
     <link rel="stylesheet"href="css/bootstrap.min.css">
@@ -35,70 +35,63 @@
 	<div class="container-full">
 		<header class="header">
 			<!-- Logo -->
-			<div class="logo">
-				<a href="/"><img src="images/logo-yellow.png"alt="Yiksai Wong"></a>
-			</div>
-			<nav>
+			<div class="header-container">
+				<a href="/">
+					<img src="images/logo-yellow.png" id="logo"alt="Yiksai Wong">
+				</a>
 				<ul class="main-nav">
-					<li class="nav-box sliding-middle-out"><a href="/index.html#1">Work</a></li>
+					<li class="nav-box sliding-middle-out"><a href="#1">Work</a></li>
 					<div id="space"></div>
 					<li class="nav-box2 sliding-middle-out"><a href="/about">About</a></li>
 				</ul>
 				<span class="main-nav2" onclick="openNav()">
-					<span class="menu-text">Menu<span class="ion-navicon menu-icon"></span></span>
+					<span class="ion-navicon menu-icon"></span>
 				</span>
 				<div id="mySidenav" class="sidenav">
-				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				  <a href="/about">About</a>
-				  <h5 class="yellow-text">Work</h5>
-				  <a href="/peer">PEER</a>
-				  <a href="/captureit">CaptureIT</a>
-				  <a href="/graphics">Graphics</a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="/about">About</a>
+					<h5 class="yellow">Work</h5>
+					<a href="/partnerpage">Partner Page</a>
+					<a href="/storefilter">Store Filters</a>
+					<a href="/holidaystore">Holiday Store</a>
+					<a href="/graphics">Graphics</a>
 				</div>
-			</nav>
+			</div>
 		</header>
 
-		<section class="graphics-header">	
-			<div class="proj-desc">	
-				<h1 class="yellow-text">Graphics</h1>
-				<h4>
-					<div class="yellow-text">Type<span> Graphic Design</span></div>
-					<div class="yellow-text">Date<span> 2015-2016</span></div>
-				</h4>
+		<section class="proj-wrap">
+			<div class="proj-desc">
+				<h1> Graphics </h1>
+				<p>Below are all the graphics (logos, flyers, etc.) I have worked on. If you would like to learn more about the process behind each piece, feel free to <b><a href="mailto:yiksai.wong@gmail.com">contact</a></b> me!</p>			
 			</div>
 		</section>
 
-		<section class="proj-intro graphics-intro">
-			<div class ="textbox">
-				<div class="proj-text darkgray-text">
-					<h2 class="darkgray-text">Intro</h2>
-					<p>Below are all the graphics (logos, flyers, etc.) I have worked on in the past two year. If you would like to learn more about the process behind each piece, feel free to <a href="mailto:yiksai.wong@gmail.com">contact</a> me!</p>
+		<section class="page-wrapper textbox">
+			<div class="proj-text">
+				<div class="center">
+					<h4 class="gray-text">Email Design</h4>
+					<img src="images/Graphics/Graphics_Email.jpg" class="images images-graphics"></img>
+					<h4 class="gray-text">Store Decals</h4>
+					<div class="gray fineprint fineprint-graphics">Window Decal, Wall Decals, Flyers, Signages, T-Shirts, Shopping Bags</div>
+					<img src="images/Graphics/Graphics_PopUpStore-1.jpg" class="images"></img>
+					<img src="images/Graphics/Graphics_PopUpStore-2.jpg" class="images"></img>
+					<img src="images/Graphics/Graphics_PopUpStore-3.jpg" class="images"></img>
+					<img src="images/Graphics/Graphics_PopUpStore-4.jpg" class="images images-graphics"></img>
+					<h4 class="gray-text">Digital Ads</h4>
+					<img src="images/Graphics/Graphics_Ads.jpg" class="images images-graphics"></img>
+					<h4 class="gray-text">Apparel & Flyers</h4>
+					<img src="images/Graphics/Graphics_ApparelFlyer.jpg" class="images images-graphics"></img>
+					<h4 class="gray-text">Logos</h4>
+					<img src="images/Graphics/Graphics_Logos.jpg" class="images images-graphics"></img>
 				</div>
 			</div>
 		</section>
-
-		<section class="page-wrapper textbox t1">
-			<div class="proj-text center-img">
-				<h4 class="gray-text">Business Card Design</h4><br>
-				<img src="images/graphics-1.png" class="images"></img>
-				<h4 class="gray-text">Club Flyer</h4>
-				<br>
-				<img src="images/graphics-2.png" class="images"></img>
-				<h4 class="gray-text">Logo Designs</h4><br>
-				<img src="images/graphics-3.png" class="images"></img>
-				<h4 class="gray-text">Apparel Design</h4><br>
-				<img src="images/graphics-4.png" class="images"></img>
-				<br>
-				<h2 class="gray-text">Thank you for reading!</h2>
-				<div id="space"></div>
+		<section class="next-container">
+				<div class="next-desc">
+				<h4 class="thin yellow">Next Project</h4>
+				<a href="/partnerpage"><h1 class="next-nav sliding-middle-out white">TOMO Partner Page</h1></a>
 			</div>
 		</section>
-		<section class="next-peer">
-			<div class="next-desc">
-				<h4 class="thin blue-text">Next Project</h4>
-				<a href="/peer"><h1 class="peer-nav sliding-middle-out">PEER</h1></a>
-			</div>
-		</section>	
 	</div>
 	<!-- Plug-ins -->
 	<script src="js/jquery-3.1.1.js"></script>

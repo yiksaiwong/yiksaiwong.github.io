@@ -8,7 +8,7 @@
 	<meta name="keywords" content="Yiksai Wong, UI/UX Designer, Graphic Designer, Designer, Portfolio">
 	<meta name="author" content="Yiksai Wong">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="icon" href="images/logo-gray.png">
+	<link rel="icon" href="images/logo-black.png">
 
 	<!-- Bootstrap -->
     <link rel="stylesheet"href="css/bootstrap.min.css">
@@ -32,87 +32,75 @@
 
 
 <body>
-	<div class="container-full">
-		<header class="header">
-			<!-- Logo -->
-			<div class="logo">
-				<a href="/"><img src="images/logo-yellow.png"alt="Yiksai Wong"></a>
+<div class="container-full">
+	<header class="header">
+		<!-- Logo -->
+		<div class="header-container">
+			<a href="/">
+				<img src="images/logo-yellow.png" id="logo"alt="Yiksai Wong">
+			</a>
+			<ul class="main-nav">
+				<li class="nav-box sliding-middle-out"><a href="#1">Work</a></li>
+				<div id="space"></div>
+				<li class="nav-box2 sliding-middle-out"><a href="/about">About</a></li>
+			</ul>
+			<span class="main-nav2" onclick="openNav()">
+				<span class="ion-navicon menu-icon"></span>
+			</span>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="/about">About</a>
+				<h5 class="yellow">Work</h5>
+				<a href="/partnerpage">Partner Page</a>
+				<a href="/storefilter">Store Filters</a>
+				<a href="/holidaystore">Holiday Store</a>
+				<a href="/graphics">Graphics</a>
 			</div>
-			<nav>
-				<ul class="main-nav">
-					<li class="nav-box sliding-middle-out"><a href="/index.html#1">Work</a></li>
-					<div id="space"></div>
-					<li class="nav-box2 sliding-middle-out"><a href="/about">About</a></li>
-				</ul>
-				<span class="main-nav2" onclick="openNav()">
-					<span class="menu-text">Menu<span class="ion-navicon menu-icon"></span></span>
-				</span>
-				<div id="mySidenav" class="sidenav">
-				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				  <a href="/about">About</a>
-				  <h5 class="yellow-text">Work</h5>
-				  <a href="/peer">PEER</a>
-				  <a href="/captureit">CaptureIT</a>
-				  <a href="/graphics">Graphics</a>
-				</div>
-			</nav>
-		</header>
+		</div>
+	</header>
 
-		<section class="about-header">		
-			<div class="about-desc">
-				<h1>Hello there! <br>I am <span class="yellow-text">Yiksai</span>.</h1>
+	<section class="page-wrapper">
+		<div class="image-container about-desc">
+			<div class="work-image">
+				<img src='images/about/about_headshot.jpg'
+    			  	srcset='images/about/about_headshot.jpg 1x,
+             			   images/about/about_headshot-m.jpg 2x,
+             			   images/about/about_headshot-s.jpg 3x'/>
 			</div>
-		</section>
-
-		<section class="proj-intro">
-			<div class ="textbox">
-				<div class="about-text">
-					<h2 class="darkgray-text">About</h2>
-					<p class="darkgray-text">I'm Yiksai, a UC Berkeley graduate interested in UI/UX. Creating while solving problems was what sparked my passion for UI/UX design. I focus on creating designs that are clean and simple, yet complex in functionality.</p>
-					<p class="darkgray-text"> On my spare time, I love reading, watching shows, and editing <a href="https://www.youtube.com/user/regretfulseoul/">videos</a>! 
-				</div>
-			</div>
-		</section>
-
-		<section class="page-wrapper textbox t1">
-			<div class="proj-text">
-				<h2 class="gray-text">My Process</h2>
-				<h3 class="yellow-text"><img src="images/research.png" class="process"></img><b>01 Research</b></h3>
-				<p>Gather information about product and targeted audience. Conduct interviews and perform competitor analysis. Set goals.</p>
-				<h3 class="yellow-text"> <img src="images/analysis.png" class="process"></img><b>02 Analysis</b></h3>
-				<p>From gathered data, create user personas and storyboard. Outline task flow and user flow.</p>
-				<h3 class="yellow-text"> <img src="images/design.png" class="process"></img><b>03 Design</b></h3>
-				<p>Create wireframe (paper prototype), low-fidelity prototype, then high-fidelity prototype.</p>
-				<h3 class="yellow-text"> <img src="images/test.png" class="process"></img><b>04 Test & Reflect</b></h3>
-				<p>Test product (usability testing), gather feedback, refine project, and reflect.</p>
-				<p><i>*Repeat process to improve product.</i></p>
-			</div>
-		</section>
-			<!-- Contact -->
-		<section class="contact-wrap">
-			<div class="textbox t2">
-				<div class="contact">
-					<h1>Want to</h1><h1 class="yellow-text">collaborate?</h1>
-					<h5 class="gray-text">I'm currently available for freelance projects and would love to hear about yours! </h5>
-					<a href="mailto:yiksai.wong@gmail.com"><em class="transition">Let's talk!</em></a>
+			<div class="work-description"> 
+				<div class="text-left">
+					<h1>Hi there! <br> I'm Yiksai.</h1>
+					<p class="darkgray">I am UI/UX designer based in the Bay Area. Creating while solving problems was what sparked my passion for UI/UX design. I focus on creating designs that are clean and simple, yet complex in functionality.</p>
+					<p class="darkgray"> In my spare time, I love reading, watching shows/movies, and editing <a href="https://www.youtube.com/user/regretfulseoul/">videos</a>! 
 				</div>
 			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="f-wrap">
-				<div class="float-l">
-					<a href="/"><img width="30" src="images/logo-gray.png" class="f-logo" alt="Yiksai Wong"></a>
-				</div>
-				<div class="float-r">
+		</div>
+		<div class="proj-text">
+				<h2>My Process</h2>
+				<h3><img src="images/about/about_research.png" class="process"></img><b>01 Research</b></h3>
+				<p>Gather data and information about the product and define the challenge. Set goals and target audience. Conduct interviews and perform competitor analysis.</p>
+				<h3> <img src="images/about/about_analysis.png" class="process"></img><b>02 Analysis</b></h3>
+				<p>From gathered data, finalize user flow with stakeholders.</p>
+				<h3> <img src="images/about/about_design.png" class="process"></img><b>03 Design</b></h3>
+				<p>Create wireframe, low-fidelity prototype, then high-fidelity prototype. Constantly collect feedback throughout the whole design process.</p>
+				<h3> <img src="images/about/about_test.png" class="process"></img><b>04 Test+Reflect</b></h3>
+				<p>Test product (usability testing), gather more feedback, refine project, and reflect.</p>
+				<p><i>*Repeat this whole process again to update and improve the product. A project is never "finished"!</i></p>
+			</div>
+	</section>
+	<!-- Footer -->
+		<div class="footer">
+			<div class="footer-container">
+				<h1 class="white">Want to</h1><h1 class="yellow">collaborate?</h1>
+				<h5 class="gray">I'm currently available for freelance projects and would love to hear about yours! </h5>
+				<a href="mailto:yiksai.wong@gmail.com"><em class="transition">Let's talk!</em></a>
+				<div class="contacts">
 					<a href="mailto:yiksai.wong@gmail.com" class="f-icon"><i class="ion-android-mail"></i></a>
 					<a href="https://www.linkedin.com/in/yiksai-wong" class="f-icon"><i class="ion-social-linkedin"></i></a>
 				</div>
-				<h5 class="text darkgray-text">Made by Yiksai</h5>
 			</div>
-		</footer>
-	</div>
+		</div>
+	</div>	
 	<!-- Plug-ins -->
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>

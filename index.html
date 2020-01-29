@@ -8,7 +8,7 @@
 	<meta name="keywords" content="Yiksai Wong, UI/UX Designer, Graphic Designer, Designer, Portfolio">
 	<meta name="author" content="Yiksai Wong">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="icon" href="images/logo-gray.png">
+	<link rel="icon" href="images/logo-black.png">
 
 	<!-- Bootstrap -->
     <link rel="stylesheet"href="css/bootstrap.min.css">
@@ -35,92 +35,115 @@
 	<div class="container-full">
 		<header class="header">
 			<!-- Logo -->
-			<div class="logo">
-				<a href="/"><img src="images/logo-yellow.png"alt="Yiksai Wong"></a>
-			</div>
-			<nav>
+			<div class="header-container">
+				<a href="/">
+					<img src="images/logo-yellow.png" id="logo"alt="Yiksai Wong">
+				</a>
 				<ul class="main-nav">
 					<li class="nav-box sliding-middle-out"><a href="#1">Work</a></li>
 					<div id="space"></div>
 					<li class="nav-box2 sliding-middle-out"><a href="/about">About</a></li>
 				</ul>
 				<span class="main-nav2" onclick="openNav()">
-					<span class="menu-text">Menu<span class="ion-navicon menu-icon"></span></span>
+					<span class="ion-navicon menu-icon"></span>
 				</span>
 				<div id="mySidenav" class="sidenav">
-				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				  <a href="/about">About</a>
-				  <h5 class="yellow-text">Work</h5>
-				  <a href="/peer">PEER</a>
-				  <a href="/captureit">CaptureIT</a>
-				  <a href="/graphics">Graphics</a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="/about">About</a>
+					<h5 class="yellow">Work</h5>
+					<a href="/partnerpage">Partner Page</a>
+					<a href="/storefilters">Store Filters</a>
+					<a href="/holidaystore">Holiday Store</a>
+					<a href="/graphics">Graphics</a>
 				</div>
-			</nav>
+			</div>
 		</header>
 
 	<!-- Intro -->
 	<section class="intro-wrap">
-		<section class="intro-desc">
-			<h3 class="yellow-text">SOLVE & CREATE.</h3>
+		<div class="intro-desc">
 			<div class="intro-name">
 				<div class="headline">
-					<h1>Yiksai Wong</h1>
+					<h1>YIKSAI WONG</h1>
 				</div>
 			</div>
-			<h5 class="gray-text"> UI/UX Designer. Graphic Designer. </h5>
+			<h4> UI/UX Designer. Graphic Designer. </h4>
 			<a href="#1" class="down"><i class="ion-chevron-down"></i></a>
-		</section>
+		</div>
 	</section>
 
 	<!-- Work -->
 	<section class="page-wrapper">
-		<section id="1" class="image-peer">
-			<div class="text-left">
-				<h4> UI/UX - Web Redesign</h4>
-				<h2 class="blue-text">PEER</h2>
-				<a href="/peer"><em class="transition">Learn More</em></a>
+		<div id="1" class="image-container">
+			<div class="work-image"> 
+				<img src='images/HeaderImg/HeaderImg_PartnerPage.png'
+    			  	srcset='images/HeaderImg/HeaderImg_PartnerPage.png 1x,
+             			   images/HeaderImg/HeaderImg_PartnerPage-s.png 2x'/>
 			</div>
-		</section>
-		<section id="2" class="image-capture">
-			<div class="text-right">
-				<h4> UI/UX - Mobile App</h4>
-				<h2 class="green-text">CaptureIT</h2>
-				<a href="/captureit"><em class="transition">Learn More</em></a>
+			<div class="work-description"> 
+				<div class="text-left">
+					<h4>UI/UX - Web</h4>
+					<h2>TOMO<br>Partner Page</h2>
+					<a href="/partnerpage"><em class="transition">Learn More</em></a>
+				</div>
 			</div>
-		</section>
-		<section id="3" class="image-graphics">
-			<div class="text-left">
-				<h4>Graphic Design</h4>
-				<h2 class="yellow-text"> Graphics</h2>
-				<a href="/graphics"><em class="transition">Learn More</em></a>
+		</div>
+		<div id="2" class="image-container flip">
+			<div class="work-image"> 
+				<img src='images/HeaderImg_StoreFilter.png'
+    			  	srcset='images/HeaderImg/HeaderImg_StoreFilter.png 1x,
+             			   images/HeaderImg/HeaderImg_StoreFilter-s.png 2x'/>
+       		</div>
+			<div class="work-description">
+				<div class="text-left">
+					<h4>UI/UX - Web</h4>
+					<h2>TOMO<br>Store Filter</h2>
+					<a href="/storefilter"><em class="transition">Learn More</em></a>
+				</div>
+			</div>		
+		</div>
+		<div id="3"  class="image-container">
+			<div class="work-image"> 
+				<img src='images/HeaderImg/HeaderImg_HolidayStore.png'
+    			  	srcset='images/HeaderImg/HeaderImg_HolidayStore.png 1x,
+             			   images/HeaderImg/HeaderImg_HolidayStore-s.png 2x'/>
+       		</div>
+			<div class="work-description">
+				<div class="text-left">
+					<h4>UI/UX - Web and App</h4>
+					<h2>TOMO<br>Holiday Store</h2>
+					<a href="/holidaystore"><em class="transition">Learn More</em></a>
+				</div>
 			</div>
-		</section>
-		<!-- Contact -->
-		<section class="contact-wrap">
-			<div class="textbox t2">
-				<div class="contact">
-					<h1>Want to</h1><h1 class="yellow-text">collaborate?</h1>
-					<h5 class="gray-text">I'm currently available for freelance projects and would love to hear about yours! </h5>
+		</div>
+		<div id="4" class="image-container flip">
+			<div class="work-image"> 
+				<img src='images/HeaderImg/HeaderImg_Graphics.png'
+    			  	srcset='images/HeaderImg/HeaderImg_Graphics.png 1x,
+    			  			images/HeaderImg/HeaderImg_Graphics-m.png 2x,
+             			  	images/HeaderImg/HeaderImg_Graphics-s.png 3x'/>
+       		</div>
+			<div class="work-description">
+				<div class="text-left">
+					<h4>Graphic Design</h4>
+					<h2>Graphics</h2>
+					<a href="/graphics"><em class="transition">Learn More</em></a>
+				</div>
+			</div>		
+		</div>		
+	</section>
+	<!--Footer -->
+		<div class="footer">
+				<div class="footer-container">
+					<h1 class="white">Want to</h1><h1 class="yellow">collaborate?</h1>
+					<h5 class="lgray">I'm currently available for freelance projects and would love to hear about yours! </h5>
 					<a href="mailto:yiksai.wong@gmail.com"><em class="transition">Let's talk!</em></a>
+					<div class="contacts">
+						<a href="mailto:yiksai.wong@gmail.com" class="f-icon"><i class="ion-android-mail"></i></a>
+						<a href="https://www.linkedin.com/in/yiksai-wong" class="f-icon"><i class="ion-social-linkedin"></i></a>
 				</div>
 			</div>
-		</section>
-
-	<!-- Footer -->
-		<footer class="footer">
-			<div class="f-wrap">
-				<div class="float-l">
-					<a href="/"><img width="30" src="images/logo-gray.png" class="f-logo" alt="Yiksai Wong"></a>
-				</div>
-				<div class="float-r">
-					<a href="mailto:yiksai.wong@gmail.com" class="f-icon"><i class="ion-android-mail"></i></a>
-					<a href="https://www.linkedin.com/in/yiksai-wong" class="f-icon"><i class="ion-social-linkedin"></i></a>
-				</div>
-				<h5 class="text darkgray-text">Made by Yiksai</h5>
-			</div>
-		</footer>
-	</div>
-
+		</div>
 	<!-- Plug-ins -->
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>

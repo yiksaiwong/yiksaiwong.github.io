@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yiksai Wong</title>
+	<meta name="robots" content="noindex">
+	<meta charset="utf-8">
+    <meta name="description" content="I'm Yiksai Wong.">
+	<meta name="keywords" content="Yiksai Wong, UI/UX Designer, Graphic Designer, Designer, Portfolio">
+	<meta name="author" content="Yiksai Wong">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="images/logo-black.png">
+
+	<!-- Bootstrap -->
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <link rel="stylesheet"href="ionicons/css/ionicons.min.css">
+
+    <!-- Stylesheets -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-90020006-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+</head>
+
+
+<body>
+	<div class="container-full">
+		<header class="header">
+			<!-- Logo -->
+			<div class="header-container">
+				<a href="/">
+					<img src="images/logo-yellow.png" id="logo"alt="Yiksai Wong">
+				</a>
+				<ul class="main-nav">
+					<li class="nav-box sliding-middle-out"><a href="#1">Work</a></li>
+					<div id="space"></div>
+					<li class="nav-box2 sliding-middle-out"><a href="/about">About</a></li>
+				</ul>
+				<span class="main-nav2" onclick="openNav()">
+					<span class="ion-navicon menu-icon"></span>
+				</span>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="/about">About</a>
+					<h5 class="yellow">Work</h5>
+					<a href="/partnerpage">Partner Page</a>
+					<a href="/storefilter">Store Filters</a>
+					<a href="/holidaystore">Holiday Store</a>
+					<a href="/graphics">Graphics</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="page-wrapper proj-container">
+			<div class="proj-desc">
+				<h1>TOMO Store Filters</h1>
+				<p>Touch of Modern (TOMO) is an e-commerce website catered towards modern men. We offer a large selection of uniquely curated products that we organize into categories, called stores, to make the shopping experience less overwhelming. However, within each store, there are still hundreds of products to filter through. Thus, having a clean and easy to use filter feature is very important for our site. The goal of this project was to update the existing filter to place a larger emphasis on product photos and to revamp the visual design.</p>				
+			</div>
+		</section>
+
+		<img class="proj-img" src="images/ProjectImg_StoreFilter.png">
+
+		<section class="page-wrapper proj-container">
+			<div class="proj-text">
+				<h2>01. Research</h2>
+				<h4 class="gray">Challenge</h4>
+				<p>The current store filter layout takes too much attention away from the products and the visual design of the layout needs to be updated.</p>
+				<h4 class="gray">Goal</h4>
+				<p>Update the store filter to look more clean and polished while ensuring that the products and product photos are the main focus. The solution should be a filter feature that users can easily navigate while still being able to smoothly view and scroll through the list of products.</p>
+				<h4 class="gray">Audience</h4>
+				<p>New and old customers (most likely males in their 30’s) </p>
+				<p></p>
+			</div>
+
+			<div class="proj-text">			
+				<h2>02. Analysis</h2>
+				<p>Because this was an unfinished project passed on from another designer, the foundation of the filter had already been set. After reviewing the existing designs and doing some research on my own, I had a better sense of how the filters should work and what needs to be done. Here are the main changes I thought about during the analysis phase:</p>
+				<ul>
+					<li>Filter should not take up too much space. When scrolling down, it should collapse.</li>
+					<li>Include more hierarchical categorization.</li>
+					<li>Add a brand filter, giving users the ability to search for brands (can be an infinite amount) and scroll through brands easily.</li>
+					<li>For color filter, limit the number of colors we currently have to ~20.</li>
+					<li>Mobile web version - Displaying all filter categories and their dropdowns on the same page is not ideal since some filters, for example, the brand filter, can have an infinitely long list to scroll through. A solution might be to try leading them to a different screen for each filter.</li>
+					</ul>
+			</div>
+
+			<div class="proj-text">
+				<h2>03. Design</h2>
+				<p>After some research and discussing the results with the stakeholders, some changes were made to the prototype based on what I found during the analysis phase.</p>
+				<div class="center">
+					<img src="images/StoreFilter/StoreFilter_UserFlow-Old.jpg" class="images"></img>
+					<div class="gray fineprint">Old Prototype</div>
+					<img src="images/StoreFilter/StoreFilter_UserFlow-New.jpg" class="images"></img>
+					<div class="gray fineprint">Revised Prototype</div>
+				</div>
+				<p>After carefully reviewing and making some more changes to the low-fidelity prototypes, I moved onto making the high-fidelity prototypes. The final version was created to allow users to filter through products with ease. Here’s a glimpse of the final product:</p>
+				<div class="center">
+					<img src="images/StoreFilter/StoreFilter_Walkthrough-Desktop.gif" class="images"></img>
+					<div class="gray fineprint">Desktop Walkthrough</div>
+					<img src="images/StoreFilter/StoreFilter_Walkthrough-Mobile.gif" class="images-sml"></img>
+					<div class="gray fineprint">Mobile Walkthrough</div>
+					<h4>Want to interact with the final product?</h4>	
+					<a href="https://www.touchofmodern.com/partner"><em class="transition">Visit the TOMO Stores</em></a>
+				</div>				
+			</div>
+
+			<div class="proj-text">
+				<h2>04. Test &amp; Reflect</h2>
+				<p>A few rounds of QA were done with the engineers to ensure the filter looked and worked the way it should. I also created an excel sheet that tracks any bugs and issues along with potential fixes for the engineers. Additionally, we tested the filter internally to ensure that there were no additional issues.</p>
+				<h4 class="gray">Lessons learned</h4>
+				<ul>
+					<li>Always check, test, and iterate. There will always be some edge cases that you missed initially.</li> 
+					<li>It is good practice to ask for opinions from different people. You might think your current solution is the best but there might be an even better approach.</li> 
+				</ul>
+				<h4 class="gray">Future Plans</h4>
+				<ul>
+					<li>Add multi-select for categories within each store.</li>
+					<li>Expand the filter feature to other sections of the site, like our sales page.</li>
+					<li>Add a sort-by feature as a category in the filter feature.</li>
+				 </ul>
+			</div>
+		</section>
+		<section class="next-container">
+				<div class="next-desc">
+				<h4 class="thin yellow">Next Project</h4>
+				<a href="/holidaystore"><h1 class="next-nav sliding-middle-out white">TOMO Holiday Store</h1></a>
+			</div>
+		</section>
+	</div>
+	<!-- Plug-ins -->
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/side-nav.js"></script>
+</body>
+</html>
