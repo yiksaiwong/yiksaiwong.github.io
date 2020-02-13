@@ -10,9 +10,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="icon" href="images/logo-black.png">
 
-	<!-- Bootstrap -->
+	<!-- Bootstrap CSS -->
     <link rel="stylesheet"href="css/bootstrap.min.css">
     <link rel="stylesheet"href="ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 
     <!-- Stylesheets -->
 	<link rel="stylesheet" href="css/main.css">
@@ -52,8 +53,9 @@
 					<a href="/about">About</a>
 					<h5 class="yellow">Work</h5>
 					<a href="/partnerpage">Partner Page</a>
-					<a href="/storefilters">Store Filters</a>
+					<a href="/storefilter">Store Filters</a>
 					<a href="/holidaystore">Holiday Store</a>
+					<a href="/digitalsystem">Digital Design System</a>				
 					<a href="/graphics">Graphics</a>
 				</div>
 			</div>
@@ -74,63 +76,96 @@
 
 	<!-- Work -->
 	<section class="page-wrapper">
-		<div id="1" class="image-container">
-			<div class="work-image"> 
-				<img src='images/HeaderImg/HeaderImg_PartnerPage.png'
-    			  	srcset='images/HeaderImg/HeaderImg_PartnerPage.png 1x,
-             			   images/HeaderImg/HeaderImg_PartnerPage-s.png 2x'/>
-			</div>
-			<div class="work-description"> 
-				<div class="text-left">
-					<h4>UI/UX - Web</h4>
-					<h2>TOMO<br>Partner Page</h2>
-					<a href="/partnerpage"><em class="transition">Learn More</em></a>
+		<a href="/partnerpage">
+			<div id="1" class="image-container">
+				<div class="work-image work-img-left">
+					<picture>
+						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_PartnerPage.png">
+	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_PartnerPage@2x.png">
+	         			<img src="images/HeaderImg/HeaderImg_PartnerPage.png">
+         			</picture>
+				</div>
+				<div class="work-description work-right"> 
+					<div class="text-left">
+						<h4>UI/UX - Web</h4>
+						<h2>TOMO<br>Partner Page</h2>
+						<em class="transition">View Project</em>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="2" class="image-container flip">
-			<div class="work-image"> 
-				<img src='images/HeaderImg_StoreFilter.png'
-    			  	srcset='images/HeaderImg/HeaderImg_StoreFilter.png 1x,
-             			   images/HeaderImg/HeaderImg_StoreFilter-s.png 2x'/>
-       		</div>
-			<div class="work-description">
-				<div class="text-left">
-					<h4>UI/UX - Web</h4>
-					<h2>TOMO<br>Store Filter</h2>
-					<a href="/storefilter"><em class="transition">Learn More</em></a>
-				</div>
-			</div>		
-		</div>
-		<div id="3"  class="image-container">
-			<div class="work-image"> 
-				<img src='images/HeaderImg/HeaderImg_HolidayStore.png'
-    			  	srcset='images/HeaderImg/HeaderImg_HolidayStore.png 1x,
-             			   images/HeaderImg/HeaderImg_HolidayStore-s.png 2x'/>
-       		</div>
-			<div class="work-description">
-				<div class="text-left">
-					<h4>UI/UX - Web and App</h4>
-					<h2>TOMO<br>Holiday Store</h2>
-					<a href="/holidaystore"><em class="transition">Learn More</em></a>
+		</a>
+		<a href="/storefilter">
+			<div id="2" class="image-container flip">
+				<div class="work-image"> 
+					<picture>
+						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_StoreFilter.png">
+	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_StoreFilter@2x.png">
+	         			<img src="images/HeaderImg/HeaderImg_StoreFilter.png">
+         			</picture>
+	       		</div>
+				<div class="work-description">
+					<div class="text-left">
+						<h4>UI/UX - Web</h4>
+						<h2>TOMO<br>Store Filter</h2>
+						<em class="transition">View Project</em>
+					</div>
+				</div>		
+			</div>
+		</a>
+		<a href="/holidaystore">
+			<div id="3"  class="image-container">
+				<div class="work-image work-img-left"> 
+					<picture>
+						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_HolidayStore.png">
+	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_HolidayStore@2x.png">
+	         			<img src="images/HeaderImg/HeaderImg_HolidayStore.png">
+         			</picture>
+	       		</div>
+				<div class="work-description work-right">
+					<div class="text-left">
+						<h4>UI/UX - Web and App</h4>
+						<h2>TOMO<br>Holiday Store</h2>
+						<em class="transition">View Project</em>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="4" class="image-container flip">
-			<div class="work-image"> 
-				<img src='images/HeaderImg/HeaderImg_Graphics.png'
-    			  	srcset='images/HeaderImg/HeaderImg_Graphics.png 1x,
-    			  			images/HeaderImg/HeaderImg_Graphics-m.png 2x,
-             			  	images/HeaderImg/HeaderImg_Graphics-s.png 3x'/>
-       		</div>
-			<div class="work-description">
-				<div class="text-left">
-					<h4>Graphic Design</h4>
-					<h2>Graphics</h2>
-					<a href="/graphics"><em class="transition">Learn More</em></a>
+		</a>
+		<a href="/digitalsystem">
+			<div id="4" class="image-container flip">
+				<div class="work-image">
+					<picture>
+						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_DigitalSystem.png">
+	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_DigitalSystem@2x.png">
+	         			<img src="images/HeaderImg/HeaderImg_DigitalSystem.png">
+         			</picture>
+	       		</div>
+				<div class="work-description">
+					<div class="text-left">
+						<h4>Digital Design</h4>
+						<h2>Digital Design System </h2>
+						<em class="transition">View Project</em>
+					</div>
 				</div>
-			</div>		
-		</div>		
+			</div>
+		</a>
+		<a href="/graphics">
+			<div id="5"  class="image-container">
+				<div class="work-image work-img-left"> 
+					<picture>
+						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_Graphics.png">
+	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_Graphics@2x.png">
+	         			<img src="images/HeaderImg/HeaderImg_Graphics.png">
+         			</picture>
+	       		</div>
+				<div class="work-description work-right">
+					<div class="text-left">
+						<h4>Graphic Design</h4>
+						<h2>Graphics</h2>
+						<em class="transition">View Project</em>
+					</div>
+				</div>
+			</div>
+		</a>		
 	</section>
 	<!--Footer -->
 		<div class="footer">
@@ -149,5 +184,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/smooth-scroll.js"></script>
 	<script src="js/side-nav.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 </body>
 </html>
