@@ -63,13 +63,15 @@
 
 	<section class="page-wrapper">
 		<div class="image-container about-desc">
-			<div class="work-image">
-				<img src='images/About/about_headshot.jpg'
-    			  	srcset='images/About/about_headshot.jpg 1x,
-             			   images/About/about_headshot-m.jpg 2x,
-             			   images/About/about_headshot-s.jpg 3x'/>
+			<div class="work-image about-image">
+				<picture>
+					<source media="(max-width: 1024px)" srcset="images/About/about_headshot.jpg">
+         			<source media="(min-width: 1025px)" srcset="images/About/about_headshot@2x.jpg">
+         			<img src="images/About/about_headshot.jpg">
+     			</picture>
 			</div>
-			<div class="work-description"> 
+
+			<div class="work-description about-description"> 
 				<div class="text-left">
 					<h1>Hi there! <br> I'm Yiksai.</h1>
 					<p class="darkgray">I am UI/UX designer based in the Bay Area. Creating while solving problems was what sparked my passion for UI/UX design. I focus on creating designs that are clean and simple, yet complex in functionality.</p>

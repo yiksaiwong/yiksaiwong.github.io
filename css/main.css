@@ -68,8 +68,10 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
 .work-image {display:flex;flex:0 0 60%;position:relative;background-size:cover;overflow:hidden;align-items:center;justify-content:flex-end;}
 .work-img-left{justify-content: flex-start;}
 .work-image img {width: 100%; height: auto;}
+.about-image {flex:0 0 45%;}
 .flip {flex-direction: row-reverse!important;}
 .work-description{display:flex;min-height:400px;padding:0 50px;flex:0 0 40%;align-items:center;}
+.about-description{flex:0 0 55%}
 .work-right{padding:0 20px;}
 .text-left{text-align:left;vertical-align:middle;}
 .text-left h4{margin: 0px; color:#ccc; font-weight:700; text-transform: uppercase;}
