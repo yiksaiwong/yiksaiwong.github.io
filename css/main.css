@@ -30,7 +30,8 @@ ul{margin:0;}
 .header-container a{display:inline-block;text-align:center;vertical-align: middle;}
 .header-landing{background-color:#231f20;}
 #logo{width:40px;height:auto;}
-.main-nav, .main-nav a:visited, .main-nav a:focus{float:right; margin-top:0.2em;}
+.main-nav, .main-nav a:visited{float:right; margin-top:0.2em;}
+.main-nav a:focus{color:#231f20;}
 .nav-landing a{color:#fff}
 .main-nav2{position:absolute;display:inline-block;right:2em;top:1.5em;cursor: pointer;}
 .main-nav2:hover, .main-nav2:link, .main-nav2:visited{text-decoration:none;color:#ffe700;}
