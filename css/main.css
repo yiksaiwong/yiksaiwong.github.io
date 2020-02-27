@@ -167,6 +167,7 @@ em:hover{color:#fff;background-color:#231f20;}
 	#logo{width:32px;}
 	.page-wrapper{max-width:90vw;}
 	.landing-wrapper{margin-top:60px;}
+	.intro-wrap{height: 100vh;}
 	.work-description{min-height:180px;}
 	.intro-desc{top:50%;}
 	.image-container{margin-bottom: 50px;}
