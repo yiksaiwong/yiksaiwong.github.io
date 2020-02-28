@@ -169,7 +169,8 @@ em:hover{color:#fff;background-color:#231f20;}
 	.landing-wrapper{margin-top:60px;}
 	.intro-wrap{height: 100vh;}
 	.work-description{min-height:180px;}
-	.intro-desc{top:50%;}
+	.intro-desc{top:55%;}
+	.intro-desc h4{margin: 1em 1.5em 0.5em;}
 	.image-container{margin-bottom: 50px;}
 	.images-sml{max-width:100%;}
 	.image-graphics, .next-graphics{background-position:40% 40%;}
