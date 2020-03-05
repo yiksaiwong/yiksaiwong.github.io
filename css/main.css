@@ -67,7 +67,8 @@ url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQV
 /*Work*/
 .name-wrap{display:block;}
 .page-wrapper{margin:20px auto 10px;width:100%;max-width: calc(60% - 10em);padding-bottom: 10px;}
-.landing-wrapper{margin-top:80px;}
+.page-wrapper-landing{margin-top:0px;}
+.landing-wrapper{padding-top:80px;}
 .work-container{margin-top:40px;}
 .image-container {display:flex;align-items:center;flex-direction:row;margin-bottom:80px;background-color:#fff;box-shadow:0px 5px 50px rgba(0,0,0,0.1); object-fit:cover;}
 .work-image {display:flex;flex:0 0 60%;position:relative;background-size:cover;overflow:hidden;align-items:center;justify-content:flex-end;}
@@ -88,7 +89,7 @@ em:hover{color:#fff;background-color:#231f20;}
 .proj-desc{margin:0 auto;vertical-align:middle;text-align:center;padding:10px 0;max-width:900px;color:#231f20;width:100%;}
 .proj-desc h1 {margin: 1em 0 0.5em;line-height: 1;}
 .proj-img {width:100%;height:auto;}
-.proj-text{vertical-align:middle;text-align:left;margin:80px 0;}
+.proj-text{vertical-align:middle;text-align:left;margin:50px 0;}
 .proj-text h2{margin-top:0.75em; margin-bottom: 0.5em;}
 .proj-text a:hover, .proj-text a:link, .proj-text a:visited{text-decoration:none;text-transform:none;font-weight:700;color:#fff;}
 .proj-text em{display: inline-block;margin: 0 auto;}
@@ -106,7 +107,7 @@ em:hover{color:#fff;background-color:#231f20;}
 .next-desc a, .next-desc a:link, .next-desc a:visited{text-decoration:none;}
 
 /*About*/
-.about-desc {box-shadow: none; padding: 100px 0 75px; margin-bottom:0px;}
+.about-desc {box-shadow: none; padding: 100px 0 100px; margin-bottom:0px;}
 .work-description {padding-right: 0px; color: #231f20}
 .about-desc h1{line-height:1; margin: 0 0 0.25em;}
 .about-desc a, .about-text a:link, .about-text a:visited{text-decoration:none;text-transform:none;font-weight:700;color:#231f20;}
@@ -166,10 +167,10 @@ em:hover{color:#fff;background-color:#231f20;}
 	.header-container{max-width: calc(100% - 3em);}
 	#logo{width:32px;}
 	.page-wrapper{max-width:90vw;}
-	.landing-wrapper{margin-top:60px;}
-	.intro-wrap{height: 100vh;}
-	.work-description{min-height:180px;}
-	.intro-desc{top:55%;}
+	.landing-wrapper{padding-top:50px;}
+	.intro-wrap{height:80vh;}
+	.work-description{min-height:180px; padding:0 20px 50px;}
+	.intro-desc{top:50%;}
 	.intro-desc h4{margin: 1em 1.5em 0.5em;}
 	.image-container{margin-bottom: 50px;}
 	.images-sml{max-width:100%;}
