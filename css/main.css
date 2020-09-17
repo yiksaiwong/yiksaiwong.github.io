@@ -167,7 +167,11 @@ em:hover{color:#fff;background-color:#231f20;}
 	.header-container{max-width: calc(100% - 3em);}
 	#logo{width:32px;}
 	.page-wrapper{max-width:90vw;}
+<<<<<<< HEAD
 	.landing-wrapper{padding-top:30px;}
+=======
+	.landing-wrapper{padding-top:50px;}
+>>>>>>> 3efa4bccb8826a1655d7a03933efbbb7348e7bb1
 	.intro-wrap{height:80vh;}
 	.work-description{min-height:180px; padding:0 20px 50px;}
 	.intro-desc{top:50%;}
