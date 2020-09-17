@@ -28,7 +28,6 @@
 	  ga('create', 'UA-90020006-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
-
 </head>
 
 
@@ -55,7 +54,7 @@
 					<a href="/partnerpage">Partner Page</a>
 					<a href="/storefilter">Store Filters</a>
 					<a href="/holidaystore">Holiday Store</a>
-					<a href="/digitalsystem">Digital Design System</a>				
+					<a href="/digitalsystem">Digital Design System</a>
 					<a href="/graphics">Graphics</a>
 				</div>
 			</div>
@@ -64,7 +63,7 @@
 		<section class="page-wrapper proj-container">
 			<div class="proj-desc">
 				<h1>TOMO Store Filters</h1>
-				<p>Touch of Modern (TOMO) is an e-commerce website catered towards modern men. We offer a huge selection of curated products that we organize into categories, called stores, to make the shopping experience less overwhelming. However, within each store, there are still hundreds of products to filter through. Thus, having a clean and easy to use filter feature is very important. The goal of this project was to update the existing filter to place a larger emphasis on product photos and to revamp the visual design.</p>
+				<p>At Touch of Modern (TOMO), an e-commerce website for modern men, we offer products that are organized into categories, called stores, which then have filter features to help customers further narrow their search. The goal of this project was to create a better viewing experience for users by revamping the visual design of the filter and by increasing the size of product photos. </p>
 				<p><b>Role:</b> UX Designer (User Research, Prototyping, Visual Design, Interactions, Testing)</p>		
 			</div>
 			<img class="proj-img" src="images/ProjectImg/ProjectImg_StoreFilter.png">
@@ -73,10 +72,13 @@
 		<section class="page-wrapper proj-container">
 			<div class="proj-text">
 				<h2>01. Research</h2>
-				<h4 class="gray">Challenge</h4>
-				<p>The current store filter layout takes too much attention away from the products and the visual design of the layout needs to be updated.</p>
+				<h4 class="gray">Challenges</h4>
+				<ul>
+					<li>The filter layout draws too much attention away from the listed products.</li> 
+					<li>The design language is outdated.</li> 
+				</ul>
 				<h4 class="gray">Goal</h4>
-				<p>Update the store filter to look more clean and polished while ensuring that the products and product photos are the main focus. The solution should be a filter feature that users can easily navigate while still being able to smoothly view and scroll through the list of products.</p>
+				<p>Create a more modern-looking filter feature that provides users with a smooth browsing experience without sacrificing product attention.</p>
 				<h4 class="gray">Audience</h4>
 				<p>New and old customers (most likely males in their 30’s) </p>
 				<p></p>
@@ -84,44 +86,40 @@
 
 			<div class="proj-text">			
 				<h2>02. Analysis</h2>
-				<p>Because this was an unfinished project passed on from another designer, the foundation of the filter had already been set. After reviewing the existing designs and doing some research on my own, I had a better sense of how the filters should work and what needs to be done. Here are the main changes I thought about during the analysis phase:</p>
+				<p>BBecause this was an unfinished project passed on from another designer, the foundation of the filter had already been set. After reviewing the existing designs and doing some research, I had a better sense of best practices for filter feature implementation. Here are the main changes I came up with:</p>
 				<ul>
 					<li>Filter should not take up too much space. When scrolling down, it should collapse.</li>
 					<li>Include more hierarchical categorization.</li>
-					<li>Add a brand filter, giving users the ability to search for brands (can be an infinite amount) and scroll through brands easily.</li>
-					<li>For color filter, limit the number of colors we currently have to ~20.</li>
-					</ul>
+					<li>For color filter, limit the number of colors from ~50 to ~20.</li>
+				</ul>
 			</div>
 
 			<div class="proj-text">
 				<h2>03. Design</h2>
-				<p>After some research and discussing the results with the stakeholders, some changes were made to the prototype based on what I found during the analysis phase.</p>
 				<div class="center">
-					<a href="images/StoreFilter/StoreFilter_Userflow-Old.jpg" data-fancybox="gallery" data-caption="Old Prototype">
+					<a href="images/StoreFilter/StoreFilter_Old.jpg" data-fancybox="gallery" data-caption="Old Design">
+						<img src="images/StoreFilter/StoreFilter_Old.jpg" class="images"></img>
+					</a>
+					<div class="gray fineprint">Old Design</div>
+					<a href="images/StoreFilter/StoreFilter_Userflow-Old.jpg" data-fancybox="gallery" data-caption="New Prototype">
 						<img src="images/StoreFilter/StoreFilter_Userflow-Old.jpg" class="images"></img>
 					</a>
-					<div class="gray fineprint">Old Prototype</div>
-					<a href="images/StoreFilter/StoreFilter_Userflow-New.jpg" data-fancybox="gallery" data-caption="Revised Prototype">
+					<div class="gray fineprint">New Prototype</div>
+					<a href="images/StoreFilter/StoreFilter_Userflow-New.jpg" data-fancybox="gallery" data-caption="Revised New Prototype">
 						<img src="images/StoreFilter/StoreFilter_Userflow-New.jpg" class="images"></img>
 					</a>
-					<div class="gray fineprint">Revised Prototype</div>
-				</div>					
-				<p>After carefully reviewing the prototypes again with the stakeholders, one major change we made was to redesign the mobile web version to display each filter in seperate screens. Displaying all filter categories and their dropdowns on the same page is not ideal since some filters, for example, the brand filter, can have an infinitely long list to scroll through. Here’s a glimpse of the final product:</p>
-				<div class="center">
-					<img src="images/StoreFilter/StoreFilter_Walkthrough-Desktop.gif" class="images"></img>
-					<div class="gray fineprint">Desktop Walkthrough</div>
-					<img src="images/StoreFilter/StoreFilter_Walkthrough-Mobile.gif" class="images-sml"></img>
-					<div class="gray fineprint">Mobile Walkthrough</div>
-				</div>
+					<p>After conducting research and discussing the results with the stakeholders, I made changes to the new prototype based on what I found during the analysis phase. I prioritized making the filter easily accessible without losing focus on the products. Thus, the final design included two views of the filter: a maximized and minimized view. Here's a glimpse of the flow of the final product:
+					<div class="gray fineprint">Revised New Prototype</div>
 			</div>
 
 			<div class="proj-text">
-				<h2>04. Test &amp; Reflect</h2>
-				<p>A few rounds of QA were done with the engineers to ensure the filter looked and worked the way it should. I also created an excel sheet that tracks any bugs and issues along with potential fixes for the engineers. Additionally, we tested the filter internally to ensure that there were no additional issues.</p>
+				<h2>04. Test & Reflect</h2>
+				<p>The engineers and I conducted a few rounds of QA to ensure that the filter looked and functioned the way it should. I also created an excel sheet that tracked bugs and issues along with potential fixes. Finally, we tested the filter internally to ensure that everything worked.</p>
+				<img class="proj-img" src="images/StoreFilter/StoreFilter_QA.jpg">
 				<h4 class="gray">Results</h4>
 				<ul>
 					<li>We ran an A/B test on the old filter and the new filter. We found that it did not do worse but it did not do significantly better.</li> 
-					<li>Although it did not improve performance, the layout worked better for our site. Thus, the stakeholders decided it was best to turn it on for 100% of the users.</li> 
+					<li>Although it did not improve performance, the layout worked better with the rest of our site. Thus, the stakeholders decided it was best to turn it on for 100% of the users.</li> 
 				</ul>
 				<h4 class="gray">Lessons learned</h4>
 				<ul>
@@ -139,9 +137,6 @@
 				<center>
 				<h4>Want to interact with the final product?</h4>
 					<a href="https://www.touchofmodern.com/stores/home-decor"><em class="transition">Visit the TOMO Stores</em></a>
-					<br>
-					<br>
-					<div class="gray fineprint">Note: The mobile web version you see in the design section was a newly revised version. It is still being built out.</div>
 				</center>
 			</div>
 		</section>
