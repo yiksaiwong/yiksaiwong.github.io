@@ -156,7 +156,7 @@ function insertPlainHTML(password) {
     decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(password).toString()).toString();
 
     if (decryptedHMAC !== encryptedHMAC) {
-        // alert('Bad password!');
+        alert('Wrong password!');
         localStorage.removeItem('password');
         return;
     }
