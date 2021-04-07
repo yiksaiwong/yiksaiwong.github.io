@@ -1,189 +1,162 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="staticrypt-html">
 <head>
-	<title>Yiksai Wong</title>
-	<meta name="robots" content="noindex">
-	<meta charset="utf-8">
-    <meta name="description" content="I'm Yiksai Wong.">
-	<meta name="keywords" content="Yiksai Wong, UI/UX Designer, Graphic Designer, Designer, Portfolio">
-	<meta name="author" content="Yiksai Wong">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="icon" href="images/logo-black.png">
+    <meta charset="utf-8">
+    <title>Protected Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Bootstrap CSS -->
-    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <!-- do not cache this page -->
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+
     <link rel="stylesheet"href="ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 
-    <!-- Stylesheets -->
-	<link rel="stylesheet" href="css/main.css">
+    <style>
 
-	<!-- Google Analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        .staticrypt-page {
+            width: 360px;
+            padding: 8% 0 0;
+            margin: auto;
+            box-sizing: border-box;
+        }
 
-	  ga('create', 'UA-90020006-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
+        .staticrypt-form {
+            position: absolute;
+            z-index: 1;
+            background: #f2f2f2;
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 45px;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) ;
+            text-align: center;
+        }
+
+        .staticrypt-form input {
+            outline: 0;
+            background: #fff;
+            width: 100%;
+            border: 0;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .staticrypt-form .staticrypt-decrypt-button {
+            text-transform: uppercase;
+            outline: 0;
+            background: #231f20;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
+            background: #231f20;
+        }
+
+        .staticrypt-html {
+            height: 100%;
+        }
+
+        .staticrypt-body {
+            margin-bottom: 1em;
+            background: #f2f2f2;
+            font-family: "Arial", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .staticrypt-icon {
+            margin-top: -2em;
+            margin-bottom: 0.5em;
+            font-size: 2em;
+        }
+
+        .staticrypt-title {
+            font-size: 1.5em;
+        }
+
+    </style>
 </head>
 
+<body class="staticrypt-body">
+<div class="staticrypt-page">
+    <div class="staticrypt-form">
+        <div class="staticrypt-icon">
+            <i class="ion-android-lock"></i>
+        </div>
 
-<body>
-	<div class="container-full">
-		<header class="header header-landing">
-			<!-- Logo -->
-			<div class="header-container">
-				<a href="/">
-					<img src="images/logo-yellow.png" id="logo"alt="Yiksai Wong">
-				</a>
-				<ul class="main-nav nav-landing">
-					<li class="nav-box landing-box sliding-middle-out"><a href="#1">Work</a></li>
-					<div id="space"></div>
-					<li class="nav-box landing-box sliding-middle-out"><a href="/about">About</a></li>
-				</ul>
-				<span class="main-nav2" onclick="openNav()">
-					<span class="ion-navicon menu-icon icon-landing"></span>
-				</span>
-				<div id="mySidenav" class="sidenav">
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					<a href="/about">About</a>
-					<h5 class="yellow">Work</h5>
-					<a href="/partnerpage">Partner Page</a>
-					<a href="/storefilter">Store Filters</a>
-					<a href="/holidaystore">Holiday Store</a>
-					<a href="/digitalsystem">Digital Design System</a>				
-					<a href="/graphics">Graphics</a>
-				</div>
-			</div>
-		</header>
+        <form id="staticrypt-form" action="#" method="post">
+            <input id="staticrypt-password"
+                   type="password"
+                   name="password"
+                   placeholder="Password"
+                   autofocus/>
 
-	<!-- Intro -->
-	<section class="intro-wrap">
-		<div class="intro-desc">
-			<div class="intro-name">
-				<div class="headline">
-					<h1>YIKSAI WONG</h1>
-				</div>
-			</div>
-			<h4>UX Designer. Graphic Designer.</h4>
-			<a href="#0" class="down"><i class="ion-chevron-down"></i></a>
-		</div>
-	</section>
+            <input type="submit" class="staticrypt-decrypt-button"/>
+        </form>
+    </div>
 
-	<!-- Work -->
-	<section id="0" class="page-wrapper page-wrapper-landing landing-wrapper">
-		<a href="/digitalsystem">
-			<div id="1" class="image-container">
-				<div class="work-image work-img-left">
-					<picture>
-						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_DigitalSystem.png">
-	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_DigitalSystem@2x.png">
-	         			<img src="images/HeaderImg/HeaderImg_DigitalSystem.png">
-         			</picture>
-	       		</div>
-				<div class="work-description work-right">
-					<div class="text">
-						<h4>Digital Design</h4>
-						<h2>Digital Design System</h2>
-						<em class="transition">View Project</em>
-					</div>
-				</div>
-			</div>
-		</a>
-		<a href="/storefilter">
-			<div id="2" class="image-container flip">
-				<div class="work-image"> 
-					<picture>
-						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_StoreFilter.png">
-	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_StoreFilter@2x.png">
-	         			<img src="images/HeaderImg/HeaderImg_StoreFilter.png">
-         			</picture>
-	       		</div>
-				<div class="work-description">
-					<div class="text">
-						<h4>UI/UX - Web</h4>
-						<h2>TOMO<br>Store Filter</h2>
-						<em class="transition">View Project</em>
-					</div>
-				</div>		
-			</div>
-		</a>
-		<a href="/holidaystore">
-			<div id="3" class="image-container">
-				<div class="work-image work-img-left"> 
-					<picture>
-						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_HolidayStore.png">
-	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_HolidayStore@2x.png">
-	         			<img src="images/HeaderImg/HeaderImg_HolidayStore.png">
-         			</picture>
-	       		</div>
-				<div class="work-description work-right">
-					<div class="text">
-						<h4>UI/UX - Web and App</h4>
-						<h2>TOMO<br>Holiday Store</h2>
-						<em class="transition">View Project</em>
-					</div>
-				</div>
-			</div>
-		</a>
-		<a href="/partnerpage">
-			<div id="4" class="image-container flip">
-				<div class="work-image">
-					<picture>
-						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_PartnerPage.png">
-	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_PartnerPage@2x.png">
-	         			<img src="images/HeaderImg/HeaderImg_PartnerPage.png">
-         			</picture>
-				</div>
-				<div class="work-description"> 
-					<div class="text">
-						<h4>UI/UX - Web</h4>
-						<h2>TOMO<br>Partner Page</h2>
-						<em class="transition">View Project</em>
-					</div>
-				</div>
-			</div>
-		</a>
-		<a href="/graphics">
-			<div id="5" class="image-container">
-				<div class="work-image work-img-left"> 
-					<picture>
-						<source media="(max-width: 1024px)" srcset="images/HeaderImg/HeaderImg_Graphics.png">
-	         			<source media="(min-width: 1025px)" srcset="images/HeaderImg/HeaderImg_Graphics@2x.png">
-	         			<img src="images/HeaderImg/HeaderImg_Graphics.png">
-         			</picture>
-	       		</div>
-				<div class="work-description work-right">
-					<div class="text">
-						<h4>Graphic Design</h4>
-						<h2>Graphics</h2>
-						<em class="transition">View Project</em>
-					</div>
-				</div>
-			</div>
-		</a>		
-	</section>
-	<!--Footer -->
-		<div class="footer">
-				<div class="footer-container">
-					<h1 class="white">Want to</h1><h1 class="yellow">collaborate?</h1>
-					<h5 class="lgray">I'm currently available for freelance projects and would love to hear about yours!</h5>
-					<a href="mailto:yiksai.wong@gmail.com"><em class="transition">Let's talk!</em></a>
-					<div class="contacts">
-						<a href="mailto:yiksai.wong@gmail.com" class="f-icon"><i class="ion-android-mail"></i></a>
-						<a href="https://www.linkedin.com/in/yiksai-wong" class="f-icon"><i class="ion-social-linkedin"></i></a>
-				</div>
-			</div>
-		</div>
-	<!-- Plug-ins -->
-	<script src="js/jquery-3.1.1.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/smooth-scroll.js"></script>
-	<script src="js/side-nav.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha384-lp4k1VRKPU9eBnPePjnJ9M2RF3i7PC30gXs70+elCVfgwLwx1tv5+ctxdtwxqZa7" crossorigin="anonymous"></script>
+
+<script>
+
+    /**
+     * Decrypt a salted msg using a password.
+     * Inspired by https://github.com/adonespitogo
+     */
+    var keySize = 256;
+    var iterations = 1000;
+    function decrypt (encryptedMsg, pass) {
+        var salt = CryptoJS.enc.Hex.parse(encryptedMsg.substr(0, 32));
+        var iv = CryptoJS.enc.Hex.parse(encryptedMsg.substr(32, 32))
+        var encrypted = encryptedMsg.substring(64);
+
+        var key = CryptoJS.PBKDF2(pass, salt, {
+            keySize: keySize/32,
+            iterations: iterations
+        });
+
+        var decrypted = CryptoJS.AES.decrypt(encrypted, key, {
+            iv: iv,
+            padding: CryptoJS.pad.Pkcs7,
+            mode: CryptoJS.mode.CBC
+        }).toString(CryptoJS.enc.Utf8);
+        return decrypted;
+    }
+
+    document.getElementById('staticrypt-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var passphrase = document.getElementById('staticrypt-password').value,
+            encryptedMsg = '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',
+            encryptedHMAC = encryptedMsg.substring(0, 64),
+            encryptedHTML = encryptedMsg.substring(64),
+            decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+        if (decryptedHMAC !== encryptedHMAC) {
+            alert('Wrong password!');
+            return;
+        }
+
+        var plainHTML = decrypt(encryptedHTML, passphrase);
+
+        document.write(plainHTML);
+        document.close();
+    });
+</script>
 </body>
 </html>
