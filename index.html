@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="staticrypt-html">
 <head>
     <meta charset="utf-8">
@@ -39,13 +39,11 @@
             z-index: 1;
             background: #f2f2f2;
             max-width: 360px;
-            margin: 0 auto;
-            padding: 45px;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%) ;
             text-align: center;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
 
         .staticrypt-form input {
@@ -53,7 +51,7 @@
             background: #fff;
             width: 100%;
             border: 0;
-            margin: 0 0 15px;
+            margin: 0 0 8px;
             padding: 15px;
             box-sizing: border-box;
             font-size: 14px;
@@ -65,10 +63,14 @@
             background: #231f20;
             width: 100%;
             border: 0;
+            margin: 12px 0 0;
             padding: 15px;
             color: #FFFFFF;
             font-size: 14px;
             cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
         }
 
         .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
@@ -97,23 +99,29 @@
             font-size: 1.5em;
         }
 
+        .error {
+            color: #f02849;
+            text-align: left;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 
 <body class="staticrypt-body">
 <div class="staticrypt-page">
     <div class="staticrypt-form">
-        <div class="staticrypt-icon">
-            <i class="ion-android-lock"></i>
-        </div>
-
         <form id="staticrypt-form" action="#" method="post">
+            <div class="staticrypt-icon">
+                <i class="ion-android-lock"></i>
+            </div>    
             <input id="staticrypt-password"
-                   type="password"
-                   name="password"
-                   placeholder="Password"
-                   autofocus/>
-
+                type="password"
+                name="password"
+                placeholder="Password"
+                autofocus/>
+            <div class="error" id="error">
+            </div>
             <input type="submit" class="staticrypt-decrypt-button"/>
         </form>
     </div>
@@ -156,7 +164,7 @@ function insertPlainHTML(password) {
     decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(password).toString()).toString();
 
     if (decryptedHMAC !== encryptedHMAC) {
-        alert('Wrong password!');
+        document.getElementById("error").innerHTML = "Incorrect password.";
         localStorage.removeItem('password');
         return;
     }
