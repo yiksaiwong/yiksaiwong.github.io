@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yiksai Wong</title>
+	<meta name="robots" content="noindex">
+	<meta charset="utf-8">
+    <meta name="description" content="I'm Yiksai Wong.">
+	<meta name="keywords" content="Yiksai Wong, UI/UX Designer, Graphic Designer, Designer, Portfolio">
+	<meta name="author" content="Yiksai Wong">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="images/logo-black.png">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <link rel="stylesheet"href="ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+    <!-- Stylesheets -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-90020006-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+
+<body>
+	<div class="container-full">
+		<header class="header">
+			<!-- Logo -->
+			<div class="header-container">
+				<a href="/">
+					<img src="images/logo-yellow.png" id="logo"alt="Yiksai Wong">
+				</a>
+				<ul class="main-nav">
+					<li class="nav-box sliding-middle-out"><a href="/index.html#1">Work</a></li>
+					<div id="space"></div>
+					<li class="nav-box sliding-middle-out"><a href="/about">About</a></li>
+				</ul>
+				<span class="main-nav2" onclick="openNav()">
+					<span class="ion-navicon menu-icon"></span>
+				</span>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="/about">About</a>
+					<h5 class="yellow">Work</h5>
+					<a href="/checkout">Checkout</a>
+					<a href="/partnerpage">Partner Page</a>
+					<a href="/storefilter">Store Filters</a>
+					<a href="/holidaystore">Holiday Store</a>
+					<a href="/digitalsystem">Digital Design System</a>				
+					<a href="/graphics">Graphics</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="page-wrapper proj-container">
+			<div class="proj-desc">
+				<h1>TOMO Checkout Redesign</h1>
+				<p>It is easy to spend hours scrolling for unique, cutting edge products on Touch of Modern (TOMO), an e-commerce website for modern men. Unfortunately, while products are being added to customers’ carts, there is a cart abandonment rate of 67.83%. In an effort to optimize our checkout process, the goal of this project was to redesign the existing checkout flow to identify usability issues to reduce cart abandonment rate and checkout time for customers.</p>
+				<p><b>Role:</b> UX Designer (User Research, Prototyping, Visual Design, Interactions, Usability Testing)</p>		
+			</div>
+			<img class="proj-img" src="images/ProjectImg/ProjectImg_Checkout.png">
+		</section>
+
+		<section class="page-wrapper proj-container">
+			<div class="proj-text">
+				<h2>01. Research + Analysis</h2>
+				<h4 class="gray">😐 Challenges</h4>
+				<p>It has been a few years since our checkout flow has been redesigned. Throughout those years, we’ve continuously added new features to the existing checkout despite various limitations. Due to that, the current checkout experience is just not the most optimal. After reassessing our current checkout flow with another designer, we discovered the following pain points:</p>
+				<ul>
+					<li>Screens have unique, inconsistent layout and styling</li> 
+					<li>Lots of back and forth between steps (more evident on mobile web)</li>
+					<li>Lacks consideration for all use cases (e.g. Users cannot use fast checkout to purchase age-restricted items or select shipping speed)</li> 
+					<li>Incomplete typing and error checking system</li> 
+				</ul>
+				<div class="center">
+					<a href="images/checkout/checkout-userflow-old.png" data-fancybox data-caption="Current Checkout User Flow">
+						<img src="images/checkout/checkout-userflow-old.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Current Checkout User Flow</div>
+				</div>	
+				<h4 class="gray">🎯 Goals</h4>
+				<p>After doing an extensive study on competitors, it was clear that we had a lot of technical debt to pay. Through the findings of the study and the checkout reassessment, we identified the following main goals:</p>
+				<ul>
+					<li>Make the checkout flow faster</li> 
+					<li>Create a more intuitive and linear experience </li>
+					<li>Remove restrictions for fast checkout</li> 
+				</ul>
+				<br>
+				<h4 class="gray">🔗 User Flow</h4>
+				<p>After determining our goals, we created a user flow outlining the main pages and steps in order to get a clearer picture of all the different use cases. We also identified the optional and required steps needed to checkout.</p>
+				<div class="center">
+					<a href="images/checkout/checkout-useflow-new.png" data-fancybox data-caption="New Checkout User Flow">
+						<img src="images/checkout/checkout-useflow-new.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">New Checkout User Flow</div>
+				</div>
+				</div>
+
+			<div class="proj-text">			
+				<h2>02. Design + User Testing</h2>
+				<h4 class="gray">🧭 Explorations</h4>
+				<p></p>
+				<b class="darkgray">Overall Layout</b>
+				<p>One key pain point of the current flow is that it required a lot of back and forth; users must continuously reload screens to advance to the next section. This issue was especially frustrating for mobile users who had to do a lot of scrolling on top of the reloading. To solve this issue, we decided on a single page flow to avoid reload time. This single page flow will work for all use cases and provide consistent styling for every customer. We also added indicators for the user’s current step and for optional steps to create a smooth and intuitive experience.</p>
+				<div class="center">
+					<a href="images/checkout/checkout-layout.png" data-fancybox data-caption="Iterations for Overall Layout">
+						<img src="images/checkout/checkout-layout.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Iterations for Overall Layout</div>
+				</div>
+				<b class="darkgray">Improve Gifting Option and Apply Store Credit</b>
+				<p>The current flow created a lot of back and forth between steps when selecting gifting options and applying store credit. It was confusing where and when users can edit their information. This inconsistency was improved through the single page checkout.
+				<br><br>
+				</p>
+				<div class="center">
+					<a href="images/checkout/checkout-creditgift.gif" data-fancybox data-caption="Issues for Gifting and Store Credit Sections in Current Flow">
+						<img src="images/checkout/checkout-creditgift.gif" class="images"></img>
+					</a>
+					<div class="gray fineprint">Issues for Gifting and Store Credit Sections in Current Flow</div>
+					<a href="images/checkout/newcheckout-creditgift.gif" data-fancybox data-caption="Issues for Gifting and Store Credit Sections in Current Flow">
+						<img src="images/checkout/newcheckout-creditgift.gif" class="images"></img>
+					</a>
+					<div class="gray fineprint">Improved Gifting and Store Credit Sections in New Checkout Flow</div>
+				</div>
+				<b class="darkgray">Improve Shipping and Billing Sections</b>
+				<p>Similarly, it took a lot of effort for customers to add new shipping or billing info. Selecting an existing shipping/billing is on a modal but adding a new shipping/billing required a page reload. Additionally, we required users to type unnecessary information such as retyping their billing address even if it’s the same as their shipping address.
+				<br><br>
+				</p>
+				<div class="center">
+					<a href="images/checkout/checkout-shipbill.gif" data-fancybox data-caption="Issues for Adding Shipping and Billing Sections in Current Flow">
+						<img src="images/checkout/checkout-shipbill.gif" class="images"></img>
+					</a>
+					<div class="gray fineprint">Issues for Adding Shipping and Billing Sections in Current Flow</div>
+					<a href="images/checkout/newcheckout-shipbill.gif" data-fancybox data-caption="Improved Adding Shipping and Billing Sections in New Checkout Flow">
+						<img src="images/checkout/newcheckout-shipbill.gif" class="images"></img>
+					</a>
+					<div class="gray fineprint">Improved Adding Shipping and Billing Sections in New Checkout Flow</div>
+				</div>
+				<b class="darkgray">Typing and Error Checking System</b>
+				<p>One of the main goals of this project was to make the flow faster. Upon further inspection, checkout time tended to increase when customers fill out their information incorrectly. To solve this, we incorporated an address autocomplete feature, city and state autofill feature (for customers who skip address autocomplete), address recommendation feature, and an error checking system. The new error checking system applied to the rest of the site as well to make it a consistent experience for customers.</p>
+				<div class="center">
+					<a href="images/checkout/checkout-checkingsystem.png" data-fancybox data-caption="Google Autocomplete, Autofill City State, Address Verification, Message System">
+						<img src="images/checkout/checkout-checkingsystem.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Google Autocomplete, Autofill City State, Address Verification, Message System</div>
+				</div>
+				<br>
+				<h4 class="gray">🔎 Usability Testing</h4>
+				<p>To validate our designs, we conducted 12 remote usability testing sessions with potential and existing customers. 6 were conducted on desktop web and 6 were conducted on mobile web. We asked each participant to complete a set of common tasks and scenarios for online shoppers.
+				</p>
+				<p></p>
+				<p>After reviewing the testing results with the stakeholders, the users had no major difficulties going through the checkout flow. However, there were a few hiccups and confusions. Thus, we improved the following features based on user feedback:
+				</p>
+				<b class="darkgray">Autofill City and State</b>
+				<p>Customers who did not use Google address recommendation preferred filling out the Zip Code first and having it autofill City and State to save time.</p>
+				<b class="darkgray">Copywriting</b>
+				<p>While all participants were able to successfully complete the checkout flow, there was some confusion around the copy. Some were confused why the ‘Card & Other Options’ section led to the shipping section first instead of the billing section. Others were confused why we asked for a phone number in the shipping section. Due to this, we revisited the copy again to make sure all steps were clear.</p>
+				<br>
+				<h4 class="gray">😊 Final Design</h4>
+				<div class="center">
+					<a href="images/checkout/newcheckout.gif" data-fancybox data-caption="New Checkout Flow for First Time User">
+						<img src="images/checkout/newcheckout.gif" class="images"></img>
+					</a>
+					<div class="gray fineprint">New Checkout Flow for First Time User</div>
+				</div>
+
+			</div>
+
+			<div class="proj-text">
+				<h2>03. Development</h2>
+				<h4 class="gray">📝 User Acceptance Test</h4>
+				<p>To ensure quality assurance, the design team created an initial draft of the user acceptance test plan (UAT) to list out all the functionalities and use cases. The engineering team reviewed it to get clarifications before editing as needed.</p>
+				<div class="center">
+					<a href="images/checkout/checkout-uat.png" data-fancybox data-caption="User Acceptance Test Plan">
+						<img src="images/checkout/checkout-uat.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">User Acceptance Test Plan</div>
+				</div>
+				<p>After the first test build was out, the designers went through the UAT to list out any UX and UI issues. A few rounds of testing is currently being done to ensure it works smoothly.</p>
+
+			<div class="proj-text">
+			<h2>04. Results + Takeaways</h2>
+			<h4 class="gray">Coming soon!</h4>
+			</div>
+		</section>
+		<section class="next-container">
+				<div class="next-desc">
+				<h4 class="thin yellow">Next Project</h4>
+				<a href="/digitalsystem"><h1 class="next-nav sliding-middle-out white">Digital Design System</h1></a>
+			</div>
+		</section>
+	</div>
+	<!-- Plug-ins -->
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/side-nav.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+</body>
+</html>

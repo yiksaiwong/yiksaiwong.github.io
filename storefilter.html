@@ -51,6 +51,7 @@
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<a href="/about">About</a>
 					<h5 class="yellow">Work</h5>
+					<a href="/checkout">Checkout</a>
 					<a href="/partnerpage">Partner Page</a>
 					<a href="/storefilter">Store Filters</a>
 					<a href="/holidaystore">Holiday Store</a>
@@ -72,66 +73,78 @@
 		<section class="page-wrapper proj-container">
 			<div class="proj-text">
 				<h2>01. Research</h2>
-				<h4 class="gray">Challenges</h4>
+				<h4 class="gray">😐 Challenges</h4>
 				<ul>
 					<li>The filter layout draws too much attention away from the listed products.</li> 
 					<li>The design language is outdated.</li> 
 				</ul>
-				<h4 class="gray">Goal</h4>
+				<h4 class="gray">🎯 Goals</h4>
 				<p>Create a more modern-looking filter feature that provides users with a smooth browsing experience without sacrificing product attention.</p>
-				<h4 class="gray">Audience</h4>
+				<h4 class="gray">👨‍👧 Audience</h4>
 				<p>New and old customers (most likely males in their 30’s) </p>
 				<p></p>
 			</div>
 
-			<div class="proj-text">			
-				<h2>02. Analysis</h2>
-				<p>BBecause this was an unfinished project passed on from another designer, the foundation of the filter had already been set. After reviewing the existing designs and doing some research, I had a better sense of best practices for filter feature implementation. Here are the main changes I came up with:</p>
-				<ul>
-					<li>Filter should not take up too much space. When scrolling down, it should collapse.</li>
-					<li>Include more hierarchical categorization.</li>
-					<li>Add a brand filter, giving users the ability to search for and scroll through brands easily (can be a lengthy list).</li>
-					<li>For color filter, limit the number of colors from ~50 to ~20.</li>
-					</ul>
-			</div>
-
 			<div class="proj-text">
-				<h2>03. Design</h2>
-				<p>After conducting research and discussing the results with the stakeholders, I made changes to the prototype based on what I found during the analysis phase.</p>
+				<h2>02. Analysis + Design</h2>
+				<h4 class="gray">📃 Initial Design</h4>
+				<p>Because this was an unfinished project passed on from another designer, the foundation of the filter had already been set. Below is the low-fidelity prototype with the overall structure and main functions of the filter.</p>
 				<div class="center">
 					<a href="images/StoreFilter/StoreFilter_Userflow-Old.jpg" data-fancybox="gallery" data-caption="Old Prototype">
-						<img src="images/StoreFilter/StoreFilter_Userflow-Old.jpg" class="images"></img>
-					</a>
+					<img src="images/StoreFilter/StoreFilter_Userflow-Old.jpg" class="images"></img>
 					<div class="gray fineprint">Old Prototype</div>
-					<a href="images/StoreFilter/StoreFilter_Userflow-New.jpg" data-fancybox="gallery" data-caption="Revised Prototype">
-						<img src="images/StoreFilter/StoreFilter_Userflow-New.jpg" class="images"></img>
 					</a>
+				</div>
+				<h4 class="gray">✏️ Revised Design</h4>
+				<p>After reviewing the existing low-fidelity prototype and doing some research, I had a better sense of best practices for filter feature implementation. Here are the main changes I made:
+				<ul>
+					<li>Filter should not take up too much space. When scrolling down, it should collapse</li>
+					<li>Include more hierarchical categorization</li>
+					<li>Add a brand filter, giving users the ability to search for and scroll through brands easily (can be a lengthy list)</li>
+					<li>For color filter, limit the number of colors from ~50 to ~20</li>
+				</ul>
+				</p>
+				<div class="center">
+					<a href="images/StoreFilter/StoreFilter_Userflow-New.jpg" data-fancybox="gallery" data-caption="Revised Prototype">
+					<img src="images/StoreFilter/StoreFilter_Userflow-New.jpg" class="images"></img>
 					<div class="gray fineprint">Revised Prototype</div>
-				</div>					
+					</a>
+				</div>
+				<h4 class="gray">😊 Final Design</h4>	
 				<p>After carefully reviewing the prototypes again with the stakeholders, one major change we made was to redesign the mobile web version to display each filter in separate screens. Displaying all filter categories and their dropdowns on the same page was not ideal since some filters could have an enormously long list to scroll through. Here’s a glimpse of the final product:</p>
 				<div class="center">
+					<a href="images/StoreFilter/StoreFilter_Walkthrough-Desktop.gif" data-fancybox="gallery" data-caption="Desktop Walkthrough">
 					<img src="images/StoreFilter/StoreFilter_Walkthrough-Desktop.gif" class="images"></img>
 					<div class="gray fineprint">Desktop Walkthrough</div>
+					</a>
+					<a href="images/StoreFilter/StoreFilter_Walkthrough-Mobile.gif" data-fancybox="gallery" data-caption="Mobile Walkthrough">
 					<img src="images/StoreFilter/StoreFilter_Walkthrough-Mobile.gif" class="images-sml"></img>
+					</a>
 					<div class="gray fineprint">Mobile Walkthrough</div>
 				</div>
 			</div>
 
 			<div class="proj-text">
-				<h2>04. Test &amp; Reflect</h2>
+				<h2>03. Test &amp; Reflect</h2>
+				<h4 class="gray">📝 Quality Assurance Doc</h4>
 				<p>The engineers and I conducted a few rounds of QA to ensure that the filter looked and functioned the way it should. I also created an excel sheet that tracked bugs and issues along with potential fixes. Finally, we tested the filter internally to ensure that everything worked.</p>
-				<img class="proj-img" src="images/StoreFilter/StoreFilter_QA.jpg">
-				<h4 class="gray">Results</h4>
+				<div class="center">
+					<a href="images/StoreFilter/StoreFilter_QA.jpg" data-fancybox data-caption="Quality Assurance Doc">
+						<img src="images/StoreFilter/StoreFilter_QA.jpg" class="images"></img>
+					</a>
+					<div class="gray fineprint">Quality Assurance Doc</div>
+				</div>
+				<h4 class="gray">📊 Results</h4>
 				<ul>
 					<li>We ran an A/B test on the old filter and the new filter. We found that it did not do worse but it did not do significantly better.</li> 
 					<li>Although it did not improve performance, the layout worked better with the rest of our site. Thus, the stakeholders decided it was best to turn it on for 100% of the users.</li> 
 				</ul>
-				<h4 class="gray">Lessons learned</h4>
+				<h4 class="gray">💡 Lessons Learned</h4>
 				<ul>
 					<li>Always check, test, and iterate. There will always be some edge cases that you missed initially.</li> 
 					<li>It is good practice to ask for opinions from different people. You might think your current solution is the best but there might be an even better approach.</li> 
 				</ul>
-				<h4 class="gray">Next Steps</h4>
+				<h4 class="gray">📅 Future Plans</h4>
 				<ul>
 					<li>Add multi-select for categories within each store.</li>
 					<li>Expand the filter feature to other sections of the site, like our sales page.</li>
