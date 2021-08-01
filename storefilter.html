@@ -61,57 +61,78 @@
 			</div>
 		</header>
 
-		<section class="page-wrapper proj-container">
+		<section class="page-wrapper">
 			<div class="proj-desc">
 				<h1>TOMO Store Filters</h1>
-				<p>At Touch of Modern (TOMO), an e-commerce website for modern men, we offer products that are organized into categories, called stores, which then have filter features to help customers further narrow their search. The goal of this project was to create a better viewing experience for users by revamping the visual design of the filter and by increasing the size of product photos. </p>
-				<p><b>Role:</b> UX Designer (User Research, Prototyping, Visual Design, Interactions, Testing)</p>		
+				<img class="proj-img" src="images/ProjectImg/ProjectImg_StoreFilter.png">
+				<br><br>
 			</div>
-			<img class="proj-img" src="images/ProjectImg/ProjectImg_StoreFilter.png">
 		</section>
 
-		<section class="page-wrapper proj-container">
-			<div class="proj-text">
-				<h2>01. Research</h2>
-				<h4 class="gray">😐 Challenges</h4>
-				<ul>
-					<li>The filter layout draws too much attention away from the listed products.</li> 
-					<li>The design language is outdated.</li> 
-				</ul>
-				<h4 class="gray">🎯 Goals</h4>
-				<p>Create a more modern-looking filter feature that provides users with a smooth browsing experience without sacrificing product attention.</p>
-				<h4 class="gray">👨‍👧 Audience</h4>
-				<p>New and old customers (most likely males in their 30’s) </p>
-				<p></p>
+		<section class="proj-overview">
+			<div class="proj-container">
+				<h2>Overview</h2>
+				<p>At Touch of Modern (TOMO), an e-commerce website for modern men, we offer products that are organized into categories, called stores, which then have filter features to help customers further narrow their search. Although it works decently, <b>the filter has not been updated for years.</b> The goal of this project was to <b>revamp the design of the filter.</b>
+				<br><br>
+				The goal of this project was to <b>redesign the checkout flow to reduce cart abandonment rate.</b>
+				<br><br>
+				<strong>Responsibilities:</strong> User Research, Prototyping, Interaction Design, Visual Design, Quality Assurance Testing</p>
 			</div>
+		</section>
 
+		<section class="page-wrapper">
 			<div class="proj-text">
-				<h2>02. Analysis + Design</h2>
-				<h4 class="gray">📃 Initial Design</h4>
+				<h2>01. Research & Analysis</h2>
+				<h4>😟 Problems with the Current Filter</h4>
+				<p>To further understand why the current filter was not ideal, I took a look at the existing filter with the stakeholder and found the following main issue:</p>
+				<ul>
+					<li><b>The design language is outdated.</b></li> 
+					<li><b>Current layout only allows two filter options</b> (i.e. Category and Price)</li>
+					<li><b>Draws too much attention away from the listed products.</li>
+				</ul>
+				<div class="center">
+					<a href="images/StoreFilter/StoreFilter_Old.jpg" data-fancybox data-caption="Current Store Filter">
+						<img src="images/StoreFilter/StoreFilter_Old.jpg" class="images"></img>
+					</a>
+					<div class="gray fineprint">Current Store Filter</div>
+				</div>	
+				<h4>✨ Opportunities to Improve</h4>
+				<p>To revamp the filter, I planned to improve the following:</p>
+				<ul>
+					<li><b>Create a modern-looking design that allows for a more intuitive and extensive experience</b></li> 
+					<li><b>Provide users with a smooth browsing experience without sacrificing product attention</b></li>
+				</ul>
+				<br><br>
+
+				<h2>02. Design</h2>
+				<h4>📃 Initial Design</h4>
 				<p>Because this was an unfinished project passed on from another designer, the foundation of the filter had already been set. Below is the low-fidelity prototype with the overall structure and main functions of the filter.</p>
 				<div class="center">
-					<a href="images/StoreFilter/StoreFilter_Userflow-Old.jpg" data-fancybox="gallery" data-caption="Old Prototype">
+					<a href="images/StoreFilter/StoreFilter_Userflow-Old.jpg" data-fancybox data-caption="Initial Low-Fidelity Prototype">
 					<img src="images/StoreFilter/StoreFilter_Userflow-Old.jpg" class="images"></img>
-					<div class="gray fineprint">Old Prototype</div>
+					<div class="gray fineprint">Initial Low-Fidelity Prototype</div>
 					</a>
 				</div>
-				<h4 class="gray">✏️ Revised Design</h4>
-				<p>After reviewing the existing low-fidelity prototype and doing some research, I had a better sense of best practices for filter feature implementation. Here are the main changes I made:
+
+				<h4>✏️ Revised Design</h4>
+				<p>After reviewing the existing low-fidelity prototype and doing some research, I had a better sense of best practices for filter feature implementation. Here are some main changes I made:
 				<ul>
-					<li>Filter should not take up too much space. When scrolling down, it should collapse</li>
-					<li>Include more hierarchical categorization</li>
-					<li>Add a brand filter, giving users the ability to search for and scroll through brands easily (can be a lengthy list)</li>
-					<li>For color filter, limit the number of colors from ~50 to ~20</li>
+					<li><b>Reduce the filter bar size.</b> When scrolling down, it should collapse so it doesn’t take up unnecessary space.</li>
+					<li><b>Include more hierarchical categorization.</b></li>
+					<li><b>Add a brand filter</b>, giving users the ability to search for and easily scroll through what can be a lengthy list of brands.</li>
+					<li><b>Limit the number of colors from ~50 to ~20.</b></li>
 				</ul>
 				</p>
 				<div class="center">
-					<a href="images/StoreFilter/StoreFilter_Userflow-New.jpg" data-fancybox="gallery" data-caption="Revised Prototype">
+					<a href="images/StoreFilter/StoreFilter_Userflow-New.jpg" data-fancybox data-caption="Revised High-Fidelity Prototype">
 					<img src="images/StoreFilter/StoreFilter_Userflow-New.jpg" class="images"></img>
-					<div class="gray fineprint">Revised Prototype</div>
+					<div class="gray fineprint">Revised High-Fidelity Prototype</div>
 					</a>
 				</div>
-				<h4 class="gray">😊 Final Design</h4>	
-				<p>After carefully reviewing the prototypes again with the stakeholders, one major change we made was to redesign the mobile web version to display each filter in separate screens. Displaying all filter categories and their dropdowns on the same page was not ideal since some filters could have an enormously long list to scroll through. Here’s a glimpse of the final product:</p>
+
+				<h4>😊 Final Design</h4>	
+				<p>After carefully reviewing the prototypes again with the stakeholders, one major change we made was <b>redesigning the mobile web version to display each filter on separate screens.</b> Displaying all filter categories and their dropdowns on the same page was not ideal since some filters could have an enormously long list to scroll through.</p>
+				<p>Here’s a glimpse of the final product:</p>
 				<div class="center">
 					<a href="images/StoreFilter/StoreFilter_Walkthrough-Desktop.gif" data-fancybox="gallery" data-caption="Desktop Walkthrough">
 					<img src="images/StoreFilter/StoreFilter_Walkthrough-Desktop.gif" class="images"></img>
@@ -122,29 +143,30 @@
 					</a>
 					<div class="gray fineprint">Mobile Walkthrough</div>
 				</div>
-			</div>
 
-			<div class="proj-text">
-				<h2>03. Test &amp; Reflect</h2>
-				<h4 class="gray">📝 Quality Assurance Doc</h4>
-				<p>The engineers and I conducted a few rounds of QA to ensure that the filter looked and functioned the way it should. I also created an excel sheet that tracked bugs and issues along with potential fixes. Finally, we tested the filter internally to ensure that everything worked.</p>
+				<h2>03. Quality Assurance</h2>
+				<h4>📝 Quality Assurance Document</h4>
+				<p>The engineers and I conducted a few rounds of QA to ensure that the filter looked and functioned the way it should. I also created an Excel sheet to track bugs and issues along with potential fixes. Finally, we tested the filter internally to ensure that everything worked.</p>
 				<div class="center">
-					<a href="images/StoreFilter/StoreFilter_QA.jpg" data-fancybox data-caption="Quality Assurance Doc">
+					<a href="images/StoreFilter/StoreFilter_QA.jpg" data-fancybox data-caption="Quality Assurance Document">
 						<img src="images/StoreFilter/StoreFilter_QA.jpg" class="images"></img>
 					</a>
-					<div class="gray fineprint">Quality Assurance Doc</div>
+					<div class="gray fineprint">Quality Assurance Document</div>
 				</div>
-				<h4 class="gray">📊 Results</h4>
+
+
+				<h2>04. Results & Takeaways</h2>
+				<h4>📊 Results</h4>
 				<ul>
 					<li>We ran an A/B test on the old filter and the new filter. We found that it did not do worse but it did not do significantly better.</li> 
 					<li>Although it did not improve performance, the layout worked better with the rest of our site. Thus, the stakeholders decided it was best to turn it on for 100% of the users.</li> 
 				</ul>
-				<h4 class="gray">💡 Lessons Learned</h4>
+				<h4>💡 Lessons Learned</h4>
 				<ul>
 					<li>Always check, test, and iterate. There will always be some edge cases that you missed initially.</li> 
 					<li>It is good practice to ask for opinions from different people. You might think your current solution is the best but there might be an even better approach.</li> 
 				</ul>
-				<h4 class="gray">📅 Future Plans</h4>
+				<h4>📅 Future Plans</h4>
 				<ul>
 					<li>Add multi-select for categories within each store.</li>
 					<li>Expand the filter feature to other sections of the site, like our sales page.</li>
@@ -154,13 +176,14 @@
 				<br>
 				<center>
 				<h4>Want to interact with the final product?</h4>
-					<a href="https://www.touchofmodern.com/stores/home-decor"><em class="transition">Visit the TOMO Stores</em></a>
+					<a href="https://www.touchofmodern.com/stores/shirting"><em class="transition">Visit the TOMO Stores</em></a>
 					<br>
 					<br>
-					<div class="gray fineprint">Note: The mobile web version you see in the design section was a newly revised version. It is still being built out.</div>
+					<div class="gray fineprint">Note: The brand filter, color filter, and the mobile web version you saw in the design section was a newly revised version. It is still being built out.</div>
 				</center>
 			</div>
 		</section>
+
 		<section class="next-container">
 				<div class="next-desc">
 				<h4 class="thin yellow">Next Project</h4>
