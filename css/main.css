@@ -80,6 +80,7 @@ url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQV
 .work-img-left{justify-content: flex-start;}
 .work-image img {width: 100%; height: auto;}
 .about-image {flex:0 0 45%;}
+.icon{width:70px;padding-right:10px;}
 .flip {flex-direction: row-reverse!important;}
 .work-description{display:flex;min-height:400px;padding:0 50px;flex:0 0 40%;align-items:center;}
 .about-description{flex:0 0 55%}

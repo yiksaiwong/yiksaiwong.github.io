@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yiksai Wong</title>
+	<meta name="robots" content="noindex">
+	<meta charset="utf-8">
+    <meta name="description" content="I'm Yiksai Wong.">
+	<meta name="keywords" content="Yiksai Wong, UI/UX Designer, Graphic Designer, Designer, Portfolio">
+	<meta name="author" content="Yiksai Wong">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="images/logo-black.png">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet"href="css/bootstrap.min.css">
+    <link rel="stylesheet"href="ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+    <!-- Stylesheets -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-90020006-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+
+<body>
+	<div class="container-full">
+		<header class="header">
+			<!-- Logo -->
+			<div class="header-container">
+				<a href="/">
+					<img src="images/logo-yellow.png" id="logo"alt="Yiksai Wong">
+				</a>
+				<ul class="main-nav">
+					<li class="nav-box sliding-middle-out"><a href="/index.html#1">Work</a></li>
+					<div id="space"></div>
+					<li class="nav-box sliding-middle-out"><a href="/about">About</a></li>
+				</ul>
+				<span class="main-nav2" onclick="openNav()">
+					<span class="ion-navicon menu-icon"></span>
+				</span>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="/about">About</a>
+					<h5 class="yellow">Work</h5>
+					<a href="/checkout">Checkout Redesign</a>
+					<a href="/digitalsystem">Digital Design System</a>
+					<a href="/storefilter">Store Filters</a>
+					<a href="/holidaystore">Holiday Store</a>
+					<a href="/partnerpage">Partner Page</a>			
+					<a href="/graphics">Graphics</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="page-wrapper">
+			<div class="proj-desc">
+				<h1>TOMO Checkout Redesign</h1>
+				<h2>(iOS App)</h2>
+				<img class="proj-img" src="images/ProjectImg/ProjectImg_CheckoutMobile.png">
+				<br><br>
+			</div>
+		</section>
+
+		<section class="proj-overview">
+			<div class="proj-container">
+				<h2>Overview</h2>
+				<p>Scrolling for unique products is easy on Touch of Modern (TOMO), an e-commerce company for modern men. However, <b>customers are not completing their checkout process, leaving us with a cart abandonment rate of 71.06% on our iOS App.</b>
+				<br><br>
+				The goal of this project was to <b>redesign the checkout flow to reduce cart abandonment rate and match our new checkout flow on web.</b>
+				<br><br>
+				<strong>Responsibilities:</strong> User Research, Prototyping, Interaction Design, Visual Design, User Testing, Quality Assurance Testing</p>
+			</div>
+		</section>
+
+		<section class="page-wrapper">
+			<div class="proj-text">
+				<h2><img class="icon" src="images/icons/research.png">01. Research & Analysis</h2>
+				<h4>😟 Problems with the Current Checkout</h4>
+				<p>Similar to web, it has been a few years since the checkout flow was redesigned. Since then, we’ve continuously added new features to the existing checkout despite various limitations. We analyzed our current flow and discovered the following pain points:</p>
+				<ul>
+					<li><b>Screens have unique, inconsistent layout and styling</b></li> 
+					<li><b>Lots of back and forth between steps</b></li>
+					<li><b>Lacks consideration for all use cases</b> (e.g. Users cannot use express checkout to purchase age-restricted items or select shipping speed)</li>
+					<li><b>Incomplete typing and error checking system</b></li>
+					<li><b>Unlike web, no payment plan options (Sezzle and Affirm) offered</b></li> 
+				</ul>
+				<div class="center">
+					<a href="images/checkoutmobile/checkout-userflow-old.png" data-fancybox data-caption="Current Checkout User Flow">
+						<img src="images/checkoutmobile/checkout-userflow-old.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Current Checkout User Flow</div>
+				</div>	
+				<h4>✨ Opportunities to Improve</h4>
+				<p>In order to improve the checkout process, we planned to implement the following changes after doing competitive analysis and checkout reassessment:</p>
+				<ul>
+					<li><b>Create a more intuitive and linear experience</b></li> 
+					<li><b>Make the checkout flow faster</b></li>
+					<li><b>Remove restrictions for express checkout</b></li>
+					<li><b>Add payment plan options</b></li>
+				</ul>
+				<br><br>
+	
+				<h2><img class="icon" src="images/icons/design.png">02. Design</h2>
+				<h4>🔗 New User Flow</h4>
+				<p>In order to keep a consistent ecosystem, we followed the same user flow we created for web checkout redesign.</p>
+				<div class="center">
+					<a href="images/checkoutmobile/checkout-useflow-new.png" data-fancybox data-caption="New Checkout User Flow">
+						<img src="images/checkoutmobile/checkout-useflow-new.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">New Checkout User Flow
+					<br><br>
+					</div>
+				</div>
+				<h4>🧭 Explorations</h4>
+				<h6 class="darkgray">Changing the Overall Layout</h5>
+				<p>Following our solution for web, we decided to also put "Express Checkout" in checkout instead of cart. However, once we implemented it onto mobile app, we realized our solution required customers to continuously click "continue" on sections that they might not necessarily use. To solve this issue, we re-evaluated which steps were truly necessary and created a <b>flow that avoided unnecessary clicks and felt more intuitive.</b> We also updated the web version to be consistent.</p>
+				<div class="center">
+					<a href="images/checkoutmobile/checkoutweb-design.png" data-fancybox data-caption="Desktop Web Solution">
+						<img src="images/checkoutmobile/checkoutweb-design.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Desktop Web Solution</div>
+					<a href="images/checkoutmobile/checkout-layout.png" data-fancybox data-caption="Iterations for Overall Layout">
+						<img src="images/checkoutmobile/checkout-layout.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Iterations for Overall Layout
+					<br><br>
+					</div>
+				</div>
+				<h6 class="darkgray">Improve Inputting Birthday, Adding Gift Option, and Applying Store Credit</h6>
+				<p>The <b>current flow lacked considerations for all use cases and created a lot of back and forth between steps.</b> For example, customers who use Express Checkout to buy alcohol products were led back to cart with an error message but no indication on where to input their birthday. This <b>inconsistency was improved by putting Express Checkout in checkout instead of cart.</b>
+				<br><br><br>
+				</p>
+				<div class="center">
+					<strong class="darkgray">Current Design</strong>
+					<a href="images/checkoutmobile/checkout-express.png" data-fancybox data-caption="Issues for Express Checkout in Current Flow">
+						<img src="images/checkoutmobile/checkout-express.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Issues for Express Checkout in Current Flow</div>
+					<strong class="darkgray">New Design ✨</strong>
+					<a href="images/checkoutmobile/newcheckout-express.png" data-fancybox data-caption="Improved New Checkout Flow">
+						<img src="images/checkoutmobile/newcheckout-express.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Improved New Checkout Flow
+					<br><br>
+					</div>
+				</div>
+				<h6 class="darkgray">Improve Shipping and Billing Sections</h6>
+				<p>The flows for first time and existing users are inconsistent. More importantly, <b>screens have unique layout and styling.</b> Additionally, we are <b>missing payment plan options (such as Sezzle and Affirm)</b>, which we have on web. <b>All of these inconsistencies were updated with our new UI.</b>
+				<br><br><br>
+				</p>
+				<div class="center">
+					<strong class="darkgray">Current Design</strong>
+					<a href="images/checkoutmobile/checkout-shipbill.png" data-fancybox data-caption="Issues for Adding Shipping and Billing Sections in Current Flow">
+						<img src="images/checkoutmobile/checkout-shipbill.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Issues for Shipping and Billing Sections in Current Flow</div>
+					<strong class="darkgray">New Design ✨</strong>
+					<a href="images/checkoutmobile/newcheckout-shipbill.png" data-fancybox data-caption="Improved Adding Shipping and Billing Sections in New Checkout Flow">
+						<img src="images/checkoutmobile/newcheckout-shipbill.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Improved Shipping and Billing Sections in New Checkout Flow
+					<br><br><br>
+					</div>
+				</div>
+				<h6 class="darkgray">Add a Typing and Error Checking System</h6>
+				<p>Similar to web, our mobile app does not have a proper error checking system which causes an increase in checkout time for customers. To solve this, <b>we incorporated an address autocomplete feature, city and state autofill feature</b> (for customers who skip address autocomplete), <b>address verification feature, and an error checking system.</b> The new error checking system will apply to the rest of the app as well to make it a consistent experience for customers.</p>
+				<div class="center">
+					<a href="images/checkoutmobile/checkout-checkingsystem.png" data-fancybox data-caption="Google Autocomplete, Autofill City State, Address Verification, Message System">
+						<img src="images/checkoutmobile/checkout-checkingsystem.png" class="images"></img>
+					</a>
+					<div class="gray fineprint">Google Autocomplete, Autofill City State, Address Verification, Message System
+					<br><br>
+					</div>
+				</div>
+				<h4>🔎 User Testing</h4>
+				<p>To validate our designs, we conducted 6 remote usability testing sessions with potential and existing customers. Each participant was asked to complete a set of common tasks and scenarios for online shoppers. After reviewing the results with stakeholders, we improved the following based on user feedback:
+				</p>
+				<h6 class="darkgray">Not Showing the Next Step</h6>
+				<p>Since we decided not to put numbers in the app to indicate the steps, we found many users who finished filling out "Shipping" would click on "Payment Method", instead of clicking on "Continue". The "Payment Method" section is also grayed out and minimized. Due to this, we got rid of indicating what the next steps will be.</p>
+				<h6 class="darkgray">Alert Messages</h6>
+				<p>To avoid misclicks, we decided to add a modal alert box that would trigger if they try to go back to a previous page when they have started filling out a section. This is to avoid the users from having to retype their information again.</p>
+				<h6 class="darkgray">Rewrite Copy</h6>
+				<p>Although all participants were able complete the checkout flow, there was still some confusion around copy (similar to web). Again, we revisited the copy again to make sure all steps were clear.</p>
+				<br>
+				<h4>😊 Final Design</h4>
+				<div class="center">
+					<a href="images/checkoutmobile/newcheckout.gif" data-fancybox="gallery" data-caption="New Checkout Flow for First Time User">
+						<img src="images/checkoutmobile/newcheckout.gif" class="images-sml"></img>
+					</a>
+					<div class="gray fineprint">New Checkout Flow for First Time User</div>
+				</div>
+
+			<h2><img class="icon" src="images/icons/qa.png">03. Quality Assurance</h2>
+			<h4>📝 User Acceptance Test</h4>
+			<p>To ensure quality assurance, the design team created a user acceptance test plan (UAT) to list out all the functionalities and use cases. The engineering team will review it for clarifications. After the first build is out, the designer will go through the UAT to list out any issues.</p>
+			<div class="center">
+				<a href="images/checkoutmobile/checkout-uat.png" data-fancybox data-caption="User Acceptance Test Plan">
+					<img src="images/checkoutmobile/checkout-uat.png" class="images"></img>
+				</a>
+				<div class="gray fineprint">User Acceptance Test Plan</div>
+			</div>
+
+			<h2><img class="icon" src="images/icons/results.png">04. Results + Takeaways</h2>
+			<h4>📊 Results</h4>
+			<ul>
+				<li>Coming soon! Project is still in the implementation stage.</li>
+			</ul>
+			<h4>💡 Lessons Learned (So Far)</h4>
+			<ul>
+				<li>Similar to web, instead of revamping the whole checkout at once, do it in small sections. That way, if something went wrong, we know exactly which part caused it.</li>
+				<li>Involve engineers early on. Having them in more meetings helped eliminate any miscommunication between teams.</li>
+			</ul>
+			</div>
+
+		</section>
+		<section class="next-container">
+				<div class="next-desc">
+				<h4 class="thin yellow">Next Project</h4>
+				<a href="/checkout"><h1 class="next-nav sliding-middle-out white">Checkout Redesign (Web)</h1></a>
+			</div>
+		</section>
+	</div>
+	<!-- Plug-ins -->
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/side-nav.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+</body>
+</html>
