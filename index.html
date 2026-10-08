@@ -395,7 +395,8 @@
   .theme-points li { margin-bottom: 4px; }
   .theme-points li:last-child { margin-bottom: 0; }
   .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 24px; margin: 16px 0 28px; }
-  .stat-value { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4vw, 38px); letter-spacing: -0.02em; color: var(--ink); }
+  .rich-content > h4 + .stat-row { margin-top: 2px; }
+  .stat-value { line-height: 1.1; font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4vw, 38px); letter-spacing: -0.02em; color: var(--ink); }
   .stat-label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 4px; }
   .next { border-top: 1px solid var(--line); padding-top: 40px; margin-top: 8px; }
   .next a {
