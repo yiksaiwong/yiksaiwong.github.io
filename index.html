@@ -297,7 +297,8 @@
   .compare-toggle { display: grid; }
   .compare-switch-row { grid-row: 1; }
   .compare-panel { grid-row: 2; grid-column: 1; }
-  .compare-panel[hidden] { display: block; visibility: hidden; }
+  .compare-toggle { position: relative; }
+  .compare-panel[hidden] { display: block; visibility: hidden; position: absolute; left: 0; right: 0; }
   .step-flow { margin: 32px auto 24px; max-width: 760px; }
   .sf-tabs { display: flex; gap: 6px; overflow-x: auto; padding: 2px 0 12px; scrollbar-width: none; }
   .sf-tabs::-webkit-scrollbar { display: none; }
@@ -309,7 +310,8 @@
   .sf-panels { display: grid; }
   .sf-panel { grid-area: 1 / 1; }
   .sf-panel { transition: opacity .2s ease; }
-  .sf-panel[hidden] { display: block; visibility: hidden; opacity: 0; }
+  .sf-panels { position: relative; }
+  .sf-panel[hidden] { display: block; visibility: hidden; opacity: 0; position: absolute; top: 0; left: 0; right: 0; }
   .step-flow .gallery-item img { max-height: none; width: 100%; }
   .sf-nav { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 12px; }
   .sf-nav button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 15px; cursor: pointer; }
@@ -349,6 +351,8 @@
   .status-line { display: flex; align-items: flex-start; gap: 10px; }
   .status-panels { display: grid; }
   .status-panel.has-img { grid-area: 1 / 1; display: flex; visibility: hidden; }
+  .status-panels { position: relative; }
+  .status-panel.has-img:not(.active) { position: absolute; top: 0; left: 0; right: 0; }
   .status-panel.has-img.active { visibility: visible; }
   .status-panel.has-img { flex-direction: column; align-items: stretch; gap: 14px; background: none; border: 0; padding: 0; }
   .status-panel.has-img .status-line { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
