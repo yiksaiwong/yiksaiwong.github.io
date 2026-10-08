@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>
+  // On the real domain, use clean URLs (/about) instead of hash URLs (#/about).
+  window.PATH_MODE = /(^|\.)yiksaiwong\.com$|\.github\.io$/.test(location.hostname);
+  if (window.PATH_MODE) {
+    var b = document.createElement("base"); b.href = "/"; document.head.appendChild(b);
+    var q = new URLSearchParams(location.search).get("p");
+    if (q) history.replaceState(null, "", q);
+    else if (location.hash.indexOf("#/") === 0) history.replaceState(null, "", location.hash.slice(1));
+  }
+</script>
 <meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Yiksai Wong – Product Designer</title>
@@ -193,7 +203,7 @@
   .card-body { padding-top: 18px; display: grid; gap: 6px; }
   .card h3 { font-family: var(--display); font-weight: 600; font-size: clamp(21px, 2.4vw, 26px); letter-spacing: -0.02em; line-height: 1.2; margin: 0; }
   .card p { margin: 0; color: var(--muted); max-width: 56ch; }
-  .meta { display: flex; flex-wrap: wrap; gap: 8px 8px; margin-top: 8px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 8px; margin-top: 2px; }
   .chip { font-size: 13.5px; padding: 3px 11px; border-radius: 99px; border: 1px solid var(--line); color: var(--muted); }
 
   @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } }
@@ -260,7 +270,7 @@
   .shot .media-thumb { background: var(--surface); display: block; aspect-ratio: auto; }
   .shot .media-thumb img { width: 100%; height: auto; display: block; }
   .shot small { display: block; margin-top: 10px; color: var(--muted); font-size: 14px; }
-  .rich-content > h4 { display: inline-flex; align-items: center; gap: 8px; background: var(--line); color: var(--ink); font-family: var(--display); font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; padding: 9px 18px; border-radius: 999px; margin: 44px 0 14px; }
+  .rich-content > h4 { display: inline-flex; align-items: center; gap: 8px; background: var(--line); color: var(--ink); font-family: var(--display); font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; padding: 9px 18px; border-radius: 999px; margin: 30px 0 14px; }
   .rich-content > h5.sub-head { font-family: var(--display); font-weight: 700; font-size: 18px; letter-spacing: -0.01em; color: var(--ink); margin: 52px 0 10px; padding-left: 12px; border-left: 3px solid var(--line); }
   .rich-content > h4 + h5.sub-head { margin-top: 16px; }
   .rich-content > h4 + p + h5.sub-head { margin-top: 28px; }
@@ -308,7 +318,8 @@
   .sf-count { font-size: 13px; color: var(--muted); min-width: 84px; text-align: center; }
   .rich-row-item small { display: block; margin-top: 10px; color: var(--muted); font-size: 13px; }
   .rich-row-label { font-family: var(--display); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 14px 0 8px; }
-  .tile-row { display: flex; gap: 14px; margin: 16px 0 28px; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 4px; -webkit-overflow-scrolling: touch; }
+  .tile-row { display: flex; gap: 14px; margin: 16px 0 12px; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 4px; -webkit-overflow-scrolling: touch; }
+  .rich-content > h4 + .tile-row { margin-top: 2px; }
   .tile-row .tile { flex: 1 1 0; min-width: 150px; scroll-snap-align: start; }
   .tile-row::-webkit-scrollbar { height: 6px; }
   .tile-row::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
@@ -1294,8 +1305,29 @@ function initGallery() {
   });
 }
 
+function currentPath() {
+  if (PATH_MODE) return location.pathname.replace(/\/index\.html$/, "/").replace(/(.)\/$/, "$1") || "/";
+  return location.hash.replace(/^#/, "") || "/";
+}
+function fixLinks() {
+  if (!PATH_MODE) return;
+  document.querySelectorAll('a[href^="#/"]').forEach(a => { a.setAttribute("href", a.getAttribute("href").slice(1)); a.dataset.route = ""; });
+}
+document.addEventListener("click", e => {
+  if (!PATH_MODE || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest("a[data-route]");
+  if (!a) return;
+  e.preventDefault();
+  const to = a.getAttribute("href");
+  if (to !== location.pathname) history.pushState(null, "", to);
+  route();
+  const menu = document.getElementById("mobile-menu"), btn = document.querySelector(".menu-btn");
+  if (menu && !menu.hidden) { menu.hidden = true; btn && btn.setAttribute("aria-expanded", "false"); }
+});
+window.addEventListener("popstate", () => { if (PATH_MODE) route(); });
+
 function route() {
-  const h = location.hash.replace(/^#/, "") || "/";
+  const h = currentPath();
   let html, nav = "home", title = SITE.name + " – Product Designer";
   if (h === "/about") { html = about(); nav = "about"; title = "About – " + SITE.name; }
   else if (h.startsWith("/work/")) {
@@ -1308,6 +1340,7 @@ function route() {
   else html = notFound();
   app.innerHTML = html;
   document.title = title;
+  fixLinks();
   document.querySelectorAll("[data-nav]").forEach(a => {
     if (a.dataset.nav === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   });
@@ -1365,7 +1398,8 @@ document.querySelectorAll("[data-resume]").forEach(a => {
   if (SITE.resume !== "#") { a.target = "_blank"; a.rel = "noopener"; }
 });
 
-window.addEventListener("hashchange", route);
+window.addEventListener("hashchange", () => { if (!PATH_MODE) route(); });
+fixLinks();
 route();
 </script>
 </body>
