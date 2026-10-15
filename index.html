@@ -1001,7 +1001,7 @@ function renderRichBlock(b) {
   if (b.t === "compare") {
     const before = b.before, after = b.after;
     const startBefore = b.start === "before";
-    const media = x => /\.(mp4|webm|mov)$/i.test(x.src || "")
+    const media = x => /\.(mp4|webm|mov)([?#]|$)/i.test(x.src || "")
       ? `<div class="rich-video"><button type="button" class="gallery-item rich-gallery-item" aria-label="Enlarge: ${esc(x.caption || "video")}"><video src="${esc(x.src)}"${x.w ? ` width="${x.w}" height="${x.h}"` : ""} autoplay muted loop playsinline preload="auto"></video><span>${esc(x.caption || "")}</span></button></div>`
       : `<button type="button" class="gallery-item rich-gallery-item"><img src="${x.src}" alt=""><span>${esc(x.caption || "")}</span></button>`;
     return `<div class="compare-toggle">
