@@ -805,7 +805,7 @@ const SITE = {
                   {"t": "h5", "text": "Keep management simple"},
                   {"t": "p", "text": "Customers also need control over the connections they've made."},
                   {"t": "p", "text": "I designed a straightforward way for customers to view and disconnect their connected apps, giving them control **without introducing a separate app-management experience**."},
-                  {"t": "video", "src": "media/composer-manage.mp4?v=2", "w": 1920, "h": 1198, "caption": "Removing an app from Composer."},
+                  {"t": "video", "src": "media/composer-manage.mp4?v=3", "w": 1920, "h": 1198, "caption": "Removing an app from Composer."},
                   {"t": "h4", "text": "📊 Outcome"},
                   {"t": "p", "text": "This shipped as a quick win and recently launched. Customers can now connect an app to Composer and start using it **without a separate setup process**."},
                   {"t": "p", "text": "It's still early, but here's what we're seeing so far:"},
@@ -1118,8 +1118,8 @@ const LOCK_HASH = 0xb29738a2;
 const unlocked = new Set();
 function lockHash(str) { let h = 0x811c9dc5; for (const c of new TextEncoder().encode(str)) { h ^= c; h = Math.imul(h, 0x01000193) >>> 0; } return h >>> 0; }
 function isUnlocked(slug) {
-  if (unlocked.has(slug)) return true;
-  try { return sessionStorage.getItem("unlock:" + slug) === "1"; } catch (e) { return false; }
+  if (unlocked.has("*") || unlocked.has(slug)) return true;
+  try { return sessionStorage.getItem("unlock:all") === "1" || sessionStorage.getItem("unlock:" + slug) === "1"; } catch (e) { return false; }
 }
 const CONTACT_EMAIL = "yiksai.wong@gmail.com";
 function lockGate(p) {
@@ -1153,8 +1153,8 @@ function initGate() {
     e.preventDefault();
     const slug = form.dataset.slug;
     if (lockHash(input.value.trim().toLowerCase()) === LOCK_HASH) {
-      unlocked.add(slug);
-      try { sessionStorage.setItem("unlock:" + slug, "1"); } catch (e2) {}
+      unlocked.add("*");
+      try { sessionStorage.setItem("unlock:all", "1"); } catch (e2) {}
       route();
     } else {
       err.hidden = false; input.classList.add("bad"); input.select();
